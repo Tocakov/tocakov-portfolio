@@ -1,0 +1,4 @@
+/screen.png
+/assets/images/gallery/photography/*.webp
+/assets/images/gallery/photography/**/*.webp
+/assets/images/gallery/digital-art/*.webp

@@ -1,0 +1,68 @@
+{
+  "categories": {
+    "photography": {
+      "cover": "assets/images/gallery/optimized/photography/cover.webp",
+      "series": [
+        {
+          "title": "Pejzaži",
+          "cover": "assets/images/gallery/optimized/photography/landscape-cover.webp",
+          "images": [
+            {
+              "src": "assets/images/gallery/optimized/photography/landscape-01.webp",
+              "alt": "Fotografija pejzaža, rad 1"
+            },
+            {
+              "src": "assets/images/gallery/optimized/photography/landscape-02.webp",
+              "alt": "Fotografija pejzaža, rad 2"
+            }
+          ]
+        },
+        {
+          "title": "Portreti",
+          "cover": "assets/images/gallery/optimized/photography/portrait-cover.webp",
+          "images": [
+            {
+              "src": "assets/images/gallery/optimized/photography/portrait-01.webp",
+              "alt": "Portret, rad 1"
+            },
+            {
+              "src": "assets/images/gallery/optimized/photography/portrait-02.webp",
+              "alt": "Portret, rad 2"
+            }
+          ]
+        }
+      ]
+    },
+    "digital-art": {
+      "cover": "assets/images/gallery/optimized/digital-art/cover.webp",
+      "series": [
+        {
+          "title": "Test radovi",
+          "cover": "assets/images/gallery/optimized/digital-art/cover.webp",
+          "images": [
+            {
+              "src": "assets/images/gallery/optimized/digital-art/work-01.webp",
+              "alt": "Digitalna slika, test rad 1"
+            },
+            {
+              "src": "assets/images/gallery/optimized/digital-art/work-02.webp",
+              "alt": "Digitalna slika, test rad 2"
+            },
+            {
+              "src": "assets/images/gallery/optimized/digital-art/work-03.webp",
+              "alt": "Digitalna slika, test rad 3"
+            },
+            {
+              "src": "assets/images/gallery/optimized/digital-art/work-04.webp",
+              "alt": "Digitalna slika, test rad 4"
+            }
+          ]
+        }
+      ]
+    },
+    "paintings": {
+      "cover": null,
+      "series": []
+    }
+  }
+}
