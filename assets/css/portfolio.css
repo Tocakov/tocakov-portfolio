@@ -31,7 +31,7 @@
     --portfolio-lime: #88dd20;
     --portfolio-line: rgb(136 221 32 / 60%);
     --portfolio-fill: rgb(136 221 32 / 60%);
-    --portfolio-cyan: #00fbff;
+    --portfolio-cyan: #00fafe;
     --portfolio-white: #fff;
     --portfolio-black: #000;
 }
@@ -421,6 +421,10 @@ footer,
     display: flex;
     gap: .045em;
     transform: translateX(-50%);
+}
+
+.site-brand .wordmark-dots {
+    top: .082em;
 }
 
 .wordmark-dots::before,
@@ -1613,8 +1617,9 @@ h4,
 
 .series-card__title {
     display: block;
-    width: fit-content;
-    margin: 0 0 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
     padding: 3px 8px 2px;
     border: 0;
     background: var(--portfolio-fill);
@@ -1622,7 +1627,6 @@ h4,
     font: 400 clamp(16px, 1.5vw, 20px)/1.3 "Space Grotesk", sans-serif;
     text-align: left;
     text-transform: none;
-    transform: translateY(3px);
 }
 
 .series-card__media,
@@ -1630,7 +1634,7 @@ h4,
     position: relative;
     display: block;
     overflow: hidden;
-    background: #f0f0f0;
+    background: var(--portfolio-cyan);
     box-shadow: 7px 7px 0 var(--portfolio-black);
 }
 
@@ -1658,8 +1662,8 @@ h4,
 .gallery-page .series-card__image {
     aspect-ratio: auto;
     padding: 0;
-    background: transparent;
-    object-fit: cover;
+    background: var(--portfolio-cyan);
+    object-fit: contain;
 }
 
 .series-card:hover .series-card__image,
@@ -1801,7 +1805,7 @@ h4,
     width: min(100%, 680px);
     height: min(62vh, 590px);
     flex: 1 1 auto;
-    background: #f2f2f2;
+    background: var(--portfolio-cyan);
 }
 
 .series-intro__image {
