@@ -99,6 +99,20 @@ function seriesCover(series) {
     return series.cover || series.images?.[0]?.src || "";
 }
 
+function seriesImages(series) {
+    const images = [...(series.images || [])];
+    const cover = seriesCover(series);
+    if (cover && images[0]?.src !== cover) {
+        images.unshift({
+            src: cover,
+            alt: language === "en"
+                ? `${localizedSeriesName(series.title)} — series cover`
+                : `${series.title} — naslovna fotografija serije`
+        });
+    }
+    return images;
+}
+
 function setImageLoadingState(media, image, fallback) {
     const showLoaded = () => {
         media.classList.remove("is-loading", "is-error");
@@ -209,7 +223,7 @@ function returnToSeries() {
 }
 
 function openViewer() {
-    if (!currentSeries?.images?.length) return;
+    if (!currentSeries || !seriesImages(currentSeries).length) return;
     returnFocus = document.getElementById("open-series");
     currentImageIndex = 0;
     updateViewerImage();
@@ -220,14 +234,14 @@ function openViewer() {
 }
 
 function updateViewerImage() {
-    const image = currentSeries?.images?.[currentImageIndex];
+    const image = currentSeries && seriesImages(currentSeries)[currentImageIndex];
     if (!image) return;
     viewerImage.src = image.src;
     viewerImage.alt = localizedAlt(image.alt || `${currentSeries.title} — ${currentImageIndex + 1}`);
 }
 
 function preloadAdjacentImages() {
-    const images = currentSeries?.images || [];
+    const images = currentSeries ? seriesImages(currentSeries) : [];
     if (images.length < 2) return;
     [-1, 1].forEach((direction) => {
         const adjacent = images[(currentImageIndex + direction + images.length) % images.length];
@@ -237,7 +251,7 @@ function preloadAdjacentImages() {
 }
 
 function stepViewer(direction) {
-    const images = currentSeries?.images || [];
+    const images = currentSeries ? seriesImages(currentSeries) : [];
     if (!images.length) return;
     currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
     updateViewerImage();
@@ -257,6 +271,7 @@ document.querySelectorAll("[data-language]").forEach((button) => {
 });
 document.getElementById("series-back").addEventListener("click", returnToSeries);
 document.getElementById("open-series").addEventListener("click", openViewer);
+seriesIntroCover.addEventListener("click", openViewer);
 document.getElementById("viewer-close").addEventListener("click", closeViewer);
 document.getElementById("viewer-previous").addEventListener("click", () => stepViewer(-1));
 document.getElementById("viewer-next").addEventListener("click", () => stepViewer(1));

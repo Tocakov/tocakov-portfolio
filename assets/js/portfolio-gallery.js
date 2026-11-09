@@ -251,6 +251,9 @@ let introComplete = false;
 let introAnimating = false;
 let introAnimationTimer = null;
 let introAnimation = null;
+let revealObserver = null;
+let motionInitialized = false;
+let revealTargets = [];
 
 function animateIntroToHeader() {
     if (introComplete || introAnimating) return;
@@ -294,6 +297,10 @@ function finishIntro() {
     introBrand.removeAttribute("style");
     window.scrollTo({ top: 0, behavior: "auto" });
     document.getElementById("intro-continue").removeEventListener("click", animateIntroToHeader);
+    window.requestAnimationFrame(() => {
+        initializeMotion();
+        window.requestAnimationFrame(revealVisibleTargets);
+    });
 }
 
 document.getElementById("intro-continue").addEventListener("click", animateIntroToHeader);
@@ -326,20 +333,28 @@ window.addEventListener("scroll", () => {
     window.requestAnimationFrame(() => {
         const vertical = window.scrollY > window.innerHeight * 0.55;
         document.body.classList.toggle("brand-is-vertical", vertical);
+        revealVisibleTargets();
         scrollTicking = false;
     });
 }, { passive: true });
 
+window.addEventListener("resize", revealVisibleTargets, { passive: true });
+document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) revealVisibleTargets();
+});
+
 function prepareHeadingLetters() {
-    if (!("IntersectionObserver" in window) || reducedMotion.matches) return;
+    if (!introComplete || reducedMotion.matches) return;
     letterObserver?.disconnect();
-    letterObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add("letters-visible");
-            observer.unobserve(entry.target);
-        });
-    }, { threshold: 0.15 });
+    letterObserver = "IntersectionObserver" in window
+        ? new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add("letters-visible");
+                observer.unobserve(entry.target);
+            });
+        }, { rootMargin: "0px 0px 120px 0px", threshold: 0 })
+        : null;
 
     const wrapText = (node, index = { value: 0 }) => {
         if (node.nodeType === Node.TEXT_NODE) {
@@ -367,46 +382,85 @@ function prepareHeadingLetters() {
         }
     };
 
-    document.querySelectorAll("#home h1, #portfolio-teaser h2, #about h2, #about h3, #exhibitions h3, #exhibitions h4, #contact h2").forEach((element) => {
+    const headings = document.querySelectorAll("#home h1, #portfolio-teaser h2, #about h2, #about h3, #exhibitions h3, #exhibitions h4, #contact h2");
+    headings.forEach((element) => {
         element.dataset.originalMarkup ||= element.innerHTML;
         element.dataset.lettersPrepared = "true";
         wrapText(element);
-        letterObserver.observe(element);
+        letterObserver?.observe(element);
     });
     document.body.classList.add("letters-motion-ready");
+    headings.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) element.classList.add("letters-visible");
+    });
 }
 
-if ("IntersectionObserver" in window && !reducedMotion.matches) {
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-        });
-    }, { threshold: 0.12 });
+function revealVisibleTargets() {
+    if (!motionInitialized || reducedMotion.matches) return;
+    revealTargets.forEach((element) => {
+        if (element.classList.contains("is-visible")) return;
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight + 120 && rect.bottom > -120 &&
+            rect.left < window.innerWidth && rect.right > 0) {
+            element.classList.add("is-visible");
+            revealObserver?.unobserve(element);
+        }
+    });
 
-    const revealElements = document.querySelectorAll(
-        "#home .font-label-bold, #home p, #home a[href='galerija.html'], #home > div:nth-child(2) > .bg-pink-accent, #portfolio-teaser, " +
-        "#portfolio-teaser, #about [class~='lg:w-1/3'], " +
-        "#about .space-y-12 > div, " +
-        "#exhibitions .grid > div, #contact > div > div"
-    );
+    document.querySelectorAll(".letters-motion-ready [data-letters-prepared]").forEach((element) => {
+        if (element.classList.contains("letters-visible")) return;
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight + 120 && rect.bottom > -120 &&
+            rect.left < window.innerWidth && rect.right > 0) {
+            element.classList.add("letters-visible");
+            letterObserver?.unobserve(element);
+        }
+    });
+}
+
+function initializeMotion() {
+    if (motionInitialized) {
+        prepareHeadingLetters();
+        revealVisibleTargets();
+        return;
+    }
+
+    motionInitialized = true;
+    if (reducedMotion.matches) return;
+
     const animatedBoxes = new Set(document.querySelectorAll(
         "#home > div:nth-child(2) > .bg-pink-accent, #portfolio-teaser, #about [class~='lg:w-1/3'], " +
         "#about .space-y-12 > div, #exhibitions .grid > div"
     ));
+    revealTargets = [...document.querySelectorAll(
+        "#home .font-label-bold, #home p, #home a[href='galerija.html'], #home > div:nth-child(2) > .bg-pink-accent, " +
+        "#portfolio-teaser, #about [class~='lg:w-1/3'], #about .space-y-12 > div, " +
+        "#exhibitions .grid > div, #contact > div > div"
+    )];
 
-    revealElements.forEach((element, index) => {
+    revealTargets.forEach((element, index) => {
         element.classList.add("reveal");
         if (animatedBoxes.has(element)) {
             element.classList.add("reveal--box");
             element.style.setProperty("--reveal-background", "var(--portfolio-fill)");
         }
         element.style.setProperty("--reveal-delay", `${Math.min(index % 5, 4) * 90}ms`);
-        revealObserver.observe(element);
     });
 
     document.body.classList.add("reveal-motion-ready");
+    revealObserver = "IntersectionObserver" in window
+        ? new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+        });
+        }, { rootMargin: "0px 0px 120px 0px", threshold: 0 })
+        : null;
+    revealTargets.forEach((element) => revealObserver?.observe(element));
+    prepareHeadingLetters();
+    revealVisibleTargets();
 }
 
 applyLanguage(currentLanguage);
