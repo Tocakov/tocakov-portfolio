@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="light" lang="sr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>Portfolio — Miloš Točaković</title>
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body class="gallery-page">
+    <a class="gallery-back-home" href="index.html" aria-label="Nazad na početnu stranu" title="Nazad na početnu stranu">←</a>
+    <aside class="gallery-rail" aria-label="Točakov">
+        <a class="gallery-rail__brand" href="index.html" aria-label="Točakov — početna">
+            TO<span class="wordmark-marked-c" aria-hidden="true">C<span class="wordmark-dots"></span></span>AKOV
+        </a>
+    </aside>
+
+    <main class="gallery-page__main">
+        <header class="gallery-page__header">
+            <h1 class="gallery-page__title">
+                <span data-sr="Portfolio" data-en="Portfolio">Portfolio</span>
+                <span class="gallery-page__title-divider" aria-hidden="true"></span>
+                <strong data-sr="Izbor radova" data-en="Selected works">Izbor radova</strong>
+            </h1>
+            <div class="language-switch" role="group" aria-label="Izbor jezika">
+                <button type="button" class="language-switch__button" data-language="sr" aria-pressed="true">SR</button>
+                <button type="button" class="language-switch__button" data-language="en" aria-pressed="false">EN</button>
+            </div>
+        </header>
+
+        <section id="series-selection" class="gallery-series-selection" aria-label="Serije radova">
+            <p class="gallery-page__instruction" data-sr="Izaberite seriju radova" data-en="Choose a series">Izaberite seriju radova</p>
+            <div id="series-grid" class="gallery-series-grid" aria-live="polite"></div>
+            <p id="gallery-status" class="gallery-page__status" role="status" aria-live="polite" hidden></p>
+        </section>
+
+        <section id="series-intro" class="series-intro" aria-labelledby="series-intro-title" hidden>
+            <button id="series-back" class="series-back" type="button" data-sr="← Nazad na serije" data-en="← Back to series">
+                ← Nazad na serije
+            </button>
+            <div class="series-intro__layout">
+                <div class="series-intro__copy">
+                    <p class="series-intro__eyebrow" data-sr="Serija radova" data-en="Work series">Serija radova</p>
+                    <h2 id="series-intro-title" class="series-intro__title"></h2>
+                    <p id="series-intro-description" class="series-intro__description"></p>
+                </div>
+                <div class="series-intro__visual">
+                    <div id="series-intro-media" class="series-intro__media is-loading">
+                        <img id="series-intro-cover" class="series-intro__image" alt="">
+                        <span id="series-intro-fallback" class="series-intro__fallback" hidden></span>
+                    </div>
+                    <button id="open-series" class="series-intro__open" type="button" aria-label="Otvori seriju">
+                        <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="image-viewer" class="image-viewer" role="dialog" aria-modal="true" aria-label="Prikaz fotografije" hidden>
+        <button id="viewer-close" class="image-viewer__close" type="button" aria-label="Zatvori prikaz">×</button>
+        <button id="viewer-previous" class="image-viewer__step image-viewer__step--previous" type="button" aria-label="Prethodna fotografija">←</button>
+        <img id="viewer-image" class="image-viewer__image" alt="">
+        <button id="viewer-next" class="image-viewer__step image-viewer__step--next" type="button" aria-label="Sledeća fotografija">→</button>
+    </section>
+
+    <script src="assets/js/portfolio-gallery-page.js" defer></script>
+</body>
+</html>

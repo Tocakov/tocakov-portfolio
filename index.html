@@ -9,7 +9,7 @@
 <header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-margin-desktop py-6 bg-background border-b-[3px] border-on-surface">
     <a id="site-brand" class="site-brand font-headline-xl text-[48px] md:text-[64px] font-black text-on-surface" style="font-family: Anton, sans-serif;" href="#home" aria-label="Točakov — početna">TO<span class="wordmark-marked-c" aria-hidden="true">C<span class="wordmark-dots"></span></span>AKOV</a>
     <nav id="main-nav" class="hidden absolute top-full left-0 w-full flex-col gap-0 border-b-[3px] border-on-surface bg-background lg:static lg:flex lg:w-auto lg:flex-row lg:items-center lg:gap-10 lg:border-0" aria-label="Glavna navigacija">
-        <a class="nav-link nav-link--gallery px-6 py-4 font-label-bold text-[16px] uppercase tracking-widest transition-colors lg:px-3 lg:py-2" href="#gallery" data-i18n>Galerija</a>
+        <a class="nav-link nav-link--gallery px-6 py-4 font-label-bold text-[16px] uppercase tracking-widest transition-colors lg:px-3 lg:py-2" href="galerija.html" data-i18n>Galerija</a>
         <a class="nav-link nav-link--exhibitions px-6 py-4 font-label-bold text-[16px] uppercase tracking-widest transition-colors lg:px-3 lg:py-2" href="#exhibitions" data-i18n>Izložbe</a>
         <a class="nav-link nav-link--about px-6 py-4 font-label-bold text-[16px] uppercase tracking-widest transition-colors lg:px-3 lg:py-2" href="#about" data-i18n>O meni</a>
         <a class="nav-link nav-link--contact px-6 py-4 font-label-bold text-[16px] uppercase tracking-widest transition-colors lg:px-3 lg:py-2" href="#contact" data-i18n>Kontakt</a>
@@ -37,7 +37,7 @@
                         Miloš Točaković je vizuelni umetnik i fotograf. Bavi se fotografijom i digitalizacijom umetničkih dela, kao i savremenim multimedijalnim praksama.
                     </p>
                     <div class="flex items-center gap-6 mt-12">
-                        <a href="#gallery" class="inline-block bg-pink-accent text-white px-10 py-5 font-label-bold uppercase tracking-widest border-[3px] border-on-surface hover:bg-background hover:text-on-surface transition-all brutalist-shadow" data-i18n>Pogledaj Radove</a>
+                        <a href="galerija.html" class="inline-block bg-pink-accent text-white px-10 py-5 font-label-bold uppercase tracking-widest border-[3px] border-on-surface hover:bg-background hover:text-on-surface transition-all brutalist-shadow" data-i18n>Pogledaj Radove</a>
                         <div class="hidden md:block w-32 h-[3px] bg-on-surface"></div>
                     </div>
                 </div>
@@ -60,65 +60,13 @@
         </div>
     </section>
 
-    <section id="gallery" class="px-6 md:px-margin-desktop max-w-[1440px] mx-auto py-24 scroll-mt-24">
-        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
-            <div>
-                <div class="font-label-bold uppercase tracking-[0.3em] text-on-surface mb-4" data-i18n>Portfolio / 01</div>
-                <h2 class="font-headline-lg text-headline-lg uppercase leading-none text-on-surface" data-i18n>Izbor radova</h2>
-            </div>
-            <p class="max-w-xl text-on-surface font-medium" data-i18n>Izaberite kategoriju i pogledajte radove.</p>
+    <section id="portfolio-teaser" class="portfolio-teaser px-6 md:px-margin-desktop max-w-[1440px] mx-auto py-16">
+        <div class="portfolio-teaser__copy">
+            <p class="font-label-bold uppercase tracking-[0.3em] mb-3" data-i18n>Portfolio / 01</p>
+            <h2 class="font-headline-lg uppercase leading-none mb-4" data-i18n>Izbor radova</h2>
+            <p data-i18n>Izaberite seriju i pogledajte radove.</p>
         </div>
-        <div id="category-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <button type="button" class="category-preview group relative block aspect-[4/3] w-full overflow-hidden border-[3px] border-on-surface bg-[#eeeeee] shadow-[8px_8px_0px_0px_#DA0267]" data-category="photography">
-                <img class="category-preview-image absolute inset-0 h-full w-full object-contain transition-transform duration-500 group-hover:scale-105" src="assets/images/gallery/optimized/photography/cover.webp" alt="Naslovna fotografija kategorije Fotografija" loading="lazy">
-                <span class="category-preview-fallback absolute inset-0 hidden items-center justify-center p-6 text-center font-label-bold uppercase tracking-widest text-[#414a36]" hidden>Naslovna fotografija nije dodata</span>
-                <span class="absolute inset-x-0 bottom-0 bg-black/70 p-6 font-headline-md text-2xl uppercase text-white">Fotografija</span>
-            </button>
-            <button type="button" class="category-preview group relative block aspect-[4/3] w-full overflow-hidden border-[3px] border-on-surface bg-[#eeeeee] shadow-[8px_8px_0px_0px_#DA0267]" data-category="digital-art">
-                <img class="category-preview-image absolute inset-0 h-full w-full object-contain transition-transform duration-500 group-hover:scale-105" src="assets/images/gallery/optimized/digital-art/cover.webp" alt="Naslovna slika kategorije Digitalna slika" loading="lazy">
-                <span class="category-preview-fallback absolute inset-0 hidden items-center justify-center p-6 text-center font-label-bold uppercase tracking-widest text-[#414a36]" hidden>Naslovna fotografija nije dodata</span>
-                <span class="absolute inset-x-0 bottom-0 bg-black/70 p-6 font-headline-md text-2xl uppercase text-white">Digitalna slika</span>
-            </button>
-            <button type="button" class="category-preview group relative block aspect-[4/3] w-full overflow-hidden border-[3px] border-on-surface bg-[#eeeeee] shadow-[8px_8px_0px_0px_#DA0267]" data-category="paintings">
-                <img class="category-preview-image absolute inset-0 h-full w-full object-contain transition-transform duration-500 group-hover:scale-105" alt="Naslovna slika kategorije Slike" loading="lazy" hidden>
-                <span class="category-preview-fallback absolute inset-0 hidden items-center justify-center p-6 text-center font-label-bold uppercase tracking-widest text-[#414a36]" hidden>Naslovna slika nije dodata</span>
-                <span class="absolute inset-x-0 bottom-0 bg-black/70 p-6 font-headline-md text-2xl uppercase text-white">Slike</span>
-            </button>
-        </div>
-        <div id="series-view" class="gallery-content" hidden>
-            <div class="gallery-content__header">
-                <button type="button" class="gallery-back" data-gallery-back="categories">← Nazad na kategorije</button>
-                <p class="gallery-step">Portfolio / Serije</p>
-            </div>
-            <div class="gallery-content__heading">
-                <h3 id="series-category-title" class="gallery-content__title"></h3>
-                <p>Izaberite seriju radova</p>
-            </div>
-            <div class="series-carousel">
-                <button type="button" class="carousel-arrow" data-scroll-series="-1" aria-label="Prethodne serije">←</button>
-                <div id="series-track" class="series-track" aria-live="polite"></div>
-                <button type="button" class="carousel-arrow" data-scroll-series="1" aria-label="Sledeće serije">→</button>
-            </div>
-            <p id="series-empty" class="gallery-empty" hidden></p>
-        </div>
-        <div id="works-view" class="gallery-content" hidden>
-            <div class="gallery-content__header">
-                <button type="button" class="gallery-back" data-gallery-back="series">← Nazad na serije</button>
-                <p class="gallery-step">Portfolio / Radovi</p>
-            </div>
-            <div class="gallery-content__heading">
-                <h3 id="series-dialog-title" class="gallery-content__title"></h3>
-                <p id="series-position" class="gallery-step"></p>
-            </div>
-            <div class="work-carousel">
-                <button type="button" class="carousel-arrow" data-step-image="-1" aria-label="Prethodni rad">←</button>
-                <button type="button" id="series-image-button" class="work-carousel__image-button" aria-label="Uvećaj prikaz rada">
-                    <img id="series-image" alt="" class="work-carousel__image">
-                    <span id="series-image-empty" class="gallery-empty" hidden>U ovoj seriji još nema dodatih fotografija.</span>
-                </button>
-                <button type="button" class="carousel-arrow" data-step-image="1" aria-label="Sledeći rad">→</button>
-            </div>
-        </div>
+        <a href="galerija.html" class="portfolio-teaser__button" data-i18n>Pogledaj portfolio</a>
     </section>
 
     <!-- Education & Experience Grid -->
@@ -141,7 +89,7 @@
             <div class="lg:w-2/3">
                 <div class="space-y-12">
                     <div class="border-[3px] border-on-surface p-8 shadow-[8px_8px_0px_0px_#DA0267] bg-background">
-                        <div class="font-label-bold text-on-surface mb-4 uppercase tracking-widest opacity-70" data-i18n>Obrazovanje</div>
+                        <div class="section-card__label font-label-bold text-on-surface mb-4 uppercase tracking-widest opacity-70" data-i18n>Obrazovanje</div>
                         <h3 class="font-headline-md uppercase mb-4 text-on-surface">Akademija umetnosti u Novom Sadu</h3>
                         <div class="space-y-2 font-medium text-on-surface">
                             <p data-i18n>Master studije fotografije — u toku.</p>
@@ -150,7 +98,7 @@
                     </div>
 
                     <div class="border-[3px] border-on-surface p-8 shadow-[8px_8px_0px_0px_#DA0267] bg-background">
-                        <div class="font-label-bold text-on-surface mb-4 uppercase tracking-widest opacity-70" data-i18n>Iskustva i saradnje</div>
+                        <div class="section-card__label font-label-bold text-on-surface mb-4 uppercase tracking-widest opacity-70" data-i18n>Iskustva i saradnje</div>
                         <h3 class="font-headline-md uppercase mb-4 text-on-surface" data-i18n>Odabrani projekti i saradnje</h3>
                         <div class="space-y-2 font-medium text-on-surface">
                             <div data-i18n>• Spomen-zbirka Rajka Mamuzića — projekat digitalizacije slika iz kolekcije.</div>
@@ -162,7 +110,7 @@
                     </div>
 
                     <div class="border-[3px] border-on-surface p-8 shadow-[8px_8px_0px_0px_#DA0267] bg-background">
-                        <div class="font-label-bold text-on-surface mb-4 uppercase tracking-widest opacity-70" data-i18n>Tehničke veštine</div>
+                        <div class="section-card__label font-label-bold text-on-surface mb-4 uppercase tracking-widest opacity-70" data-i18n>Tehničke veštine</div>
                         <p class="text-on-surface font-medium" data-i18n>Profesionalna fotografska oprema; Adobe Photoshop CC, Lightroom CC, Capture One Pro, InDesign, Microsoft Word i ChaiNNer.</p>
                     </div>
                 </div>
@@ -322,11 +270,6 @@
     </section>
 </main>
 
-<section id="image-dialog" class="image-dialog" role="dialog" aria-modal="true" aria-label="Uvećan prikaz rada" hidden>
-    <button type="button" class="gallery-close image-dialog__close" data-close-zoom aria-label="Nazad na karusel">×</button>
-    <img id="zoomed-image" alt="" class="image-dialog__image">
-</section>
-
 <footer class="bg-background py-16 px-6 md:px-margin-desktop border-t-[3px] border-on-surface">
     <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
         <div class="font-headline-md uppercase font-black text-on-surface" aria-label="TOČAKOV">TO<span class="wordmark-marked-c" aria-hidden="true">C<span class="wordmark-dots"></span></span>AKOV</div>
@@ -357,14 +300,6 @@
             mainNav.classList.remove("flex");
         });
     });
-
-    document.querySelectorAll(".category-preview-image").forEach((image) => {
-        image.addEventListener("error", () => {
-            image.classList.add("hidden");
-            image.parentElement.querySelector(".category-preview-fallback").hidden = false;
-        }, { once: true });
-    });
-
 
 </script>
 
