@@ -33,8 +33,8 @@
                 <div class="font-label-bold uppercase tracking-[0.3em] text-on-surface mb-8" data-i18n>Vizuelni umetnik / Fotograf</div>
                 <h1 class="font-headline-xl text-[80px] md:text-[160px] leading-[0.85] mb-12 flex flex-col" style="font-family: Anton, sans-serif;"><span data-i18n>NOVA</span><span class="text-on-surface" data-i18n>ESTETIKA.</span></h1>
                 <div class="max-w-2xl">
-                    <p class="font-body-lg text-body-lg leading-relaxed mb-8 border-l-[3px] border-on-surface pl-8 font-bold uppercase text-on-surface">
-                        Miloš Točaković je vizuelni umetnik i fotograf. Bavi se fotografijom i digitalizacijom umetničkih dela, kao i savremenim multimedijalnim praksama.
+                    <p class="font-body-lg text-body-lg leading-relaxed mb-8 border-l-[3px] border-on-surface pl-8 font-bold uppercase text-on-surface" data-i18n>
+                        Miloš Točaković je vizuelni umetnik i fotograf. Bavi se fotografijom, tradicionalnom umetnošću kao i savremenim multimedijalnim praksama.
                     </p>
                     <div class="flex items-center gap-6 mt-12">
                         <a href="galerija.html" class="inline-block bg-pink-accent text-white px-10 py-5 font-label-bold uppercase tracking-widest border-[3px] border-on-surface hover:bg-background hover:text-on-surface transition-all brutalist-shadow" data-i18n>Pogledaj Radove</a>
@@ -55,7 +55,7 @@
                     <span class="" data-i18n>Dostupan za nove projekte</span>
                     <span class="w-3 h-3 bg-background rounded-full animate-pulse"></span>
                 </div>
-                <div class="site-version">v0.8 / OPEN BETA</div>
+                <div class="site-version">v1 / LIVE</div>
             </div>
         </div>
     </section>
@@ -82,7 +82,7 @@
                         <p class="">///</p>
                         <p class="" data-i18n>Savremene multimedijalne prakse</p>
                         <p class="">///</p>
-                        <p class="" data-i18n>Digitalna slika, slikarstvo i fotografija</p>
+                        <p class="" data-i18n>Digitalna slika, slikarstvo i tradicionalni mediji.</p>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,6 @@
                         <div class="section-card__label font-label-bold text-on-surface mb-4 uppercase tracking-widest opacity-70" data-i18n>Obrazovanje</div>
                         <h3 class="font-headline-md uppercase mb-4 text-on-surface">Akademija umetnosti u Novom Sadu</h3>
                         <div class="space-y-2 font-medium text-on-surface">
-                            <p data-i18n>Master studije fotografije — u toku.</p>
                             <p data-i18n>Osnovne studije fotografije (2018–septembar 2022), diplomirani fotograf.</p>
                         </div>
                     </div>
@@ -111,7 +110,8 @@
 
                     <div class="border-[3px] border-on-surface p-8 shadow-[8px_8px_0px_0px_#DA0267] bg-background">
                         <div class="section-card__label font-label-bold text-on-surface mb-4 uppercase tracking-widest opacity-70" data-i18n>Tehničke veštine</div>
-                        <p class="text-on-surface font-medium" data-i18n>Profesionalna fotografska oprema; Adobe Photoshop CC, Lightroom CC, Capture One Pro, InDesign, Microsoft Word i ChaiNNer.</p>
+                        <p class="text-on-surface font-medium" data-i18n>Profesionalna fotografska oprema; Adobe Photoshop CC, Lightroom CC, Capture One Pro, InDesign, Affinity 3 i ChaiNNer.</p>
+                        <p class="mt-4 font-medium text-on-surface" data-i18n>Korišćenje AI alata u online okruženju i pretreniranih modela na računaru.</p>
                     </div>
                 </div>
             </div>
@@ -213,19 +213,29 @@
 
     <!-- Contact Section -->
     <section class="bg-pink-accent text-white py-32 px-6 md:px-margin-desktop" id="contact">
-        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 gap-24">
             <div>
                 <h2 class="font-headline-xl text-7xl uppercase mb-12 contrast-shadow" style="line-height: 1.1; letter-spacing: 0.02em;" data-i18n>Hajde da stvaramo</h2>
-                <p class="font-body-lg text-body-lg mb-16 opacity-90 max-w-lg font-bold" data-i18n>Otvoren sam za nove projekte i upite galerija. Za saradnju ili umetničke konsultacije, pišite mi.</p>
+                <p class="font-body-lg text-body-lg mb-16 opacity-90 max-w-lg font-bold" data-i18n>Otvoren sam za nove projekte, kolaboracije i profesionalnu saradnju. Za saradnju ili umetničke konsultacije, pišite mi.</p>
                 <div class="space-y-12">
-                    <a class="group block" href="mailto:milostocakovic.photo@gmail.com">
-                        <div class="font-label-bold uppercase text-white mb-2 tracking-widest opacity-70" data-i18n>Email upit</div>
-                        <div class="contact-detail-value">milostocakovic.photo@gmail.com</div>
-                    </a>
-                    <a class="group block" href="tel:+38163450391">
-                        <div class="font-label-bold uppercase text-white mb-2 tracking-widest opacity-70" data-i18n>Telefon</div>
-                        <div class="contact-detail-value">+381 63 450 391</div>
-                    </a>
+                    <div class="contact-copy-row">
+                        <a class="contact-detail-link" href="mailto:milostocakovic.photo@gmail.com">
+                            <span class="font-label-bold uppercase text-white mb-2 tracking-widest opacity-70" data-i18n>Email upit</span>
+                            <span class="contact-detail-value">milostocakovic.photo@gmail.com</span>
+                        </a>
+                        <button class="contact-copy-button" type="button" data-copy-value="milostocakovic.photo@gmail.com" data-copy-label="Kopiraj elektronsku poštu" data-copy-success="Kopirano ✓">
+                            <span class="contact-copy-button__label">Kopiraj elektronsku poštu</span>
+                        </button>
+                    </div>
+                    <div class="contact-copy-row">
+                        <a class="contact-detail-link" href="tel:+38163450391">
+                            <span class="font-label-bold uppercase text-white mb-2 tracking-widest opacity-70" data-i18n>Telefon</span>
+                            <span class="contact-detail-value">+381 63 450 391</span>
+                        </a>
+                        <button class="contact-copy-button" type="button" data-copy-value="+381 63 450 391" data-copy-label="Kopiraj telefon" data-copy-success="Kopirano ✓">
+                            <span class="contact-copy-button__label">Kopiraj telefon</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="mt-24">
                     <div class="font-label-bold uppercase tracking-widest mb-8 opacity-60" data-i18n>Društvene mreže</div>
@@ -236,36 +246,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-form-panel bg-background text-on-surface p-10 md:p-16 border-[3px] border-on-surface relative shadow-[8px_8px_0px_0px_#ffffff]">
-                <div class="absolute -top-6 -right-6 w-12 h-12 bg-on-surface border-[3px] border-background"></div>
-                <form id="contact-form" class="space-y-10">
-                    <div class="relative">
-                        <label for="contact-name" class="font-label-bold uppercase tracking-widest text-xs mb-4 block opacity-70" data-i18n>01 / Ime i prezime</label>
-                        <input id="contact-name" name="name" autocomplete="name" maxlength="100" required class="w-full bg-transparent border-b-[3px] border-on-surface p-0 pb-4 font-headline-md focus:outline-none focus:border-on-surface transition-colors placeholder:text-on-surface/40 uppercase" placeholder="Vaše ime" data-i18n-placeholder type="text">
-                    </div>
-                    <div class="relative">
-                        <label for="contact-email" class="font-label-bold uppercase tracking-widest text-xs mb-4 block opacity-70" data-i18n>Email za odgovor</label>
-                        <input id="contact-email" name="email" autocomplete="email" maxlength="254" required class="w-full bg-transparent border-b-[3px] border-on-surface p-0 pb-4 font-headline-md focus:outline-none focus:border-on-surface transition-colors placeholder:text-on-surface/40 uppercase" placeholder="vas@email.com" data-i18n-placeholder type="email">
-                    </div>
-                    <div class="relative">
-                        <label for="contact-category" class="font-label-bold uppercase tracking-widest text-xs mb-4 block opacity-70" data-i18n>02 / Kategorija projekta</label>
-                        <select id="contact-category" name="category" required class="w-full bg-transparent border-b-[3px] border-on-surface p-0 pb-4 font-headline-md focus:outline-none focus:border-on-surface transition-colors appearance-none uppercase cursor-pointer">
-                            <option data-i18n>Umetnička fotografija</option>
-                            <option data-i18n>Digitalizacija umetničkih dela</option>
-                            <option data-i18n>Instalacija / izložba</option>
-                            <option data-i18n>Ostalo</option>
-                        </select>
-                    </div>
-                    <div class="relative">
-                        <label for="contact-message" class="font-label-bold uppercase tracking-widest text-xs mb-4 block opacity-70" data-i18n>03 / Poruka</label>
-                        <textarea id="contact-message" name="message" maxlength="1000" required class="w-full bg-transparent border-b-[3px] border-on-surface p-0 pb-4 font-headline-md focus:outline-none focus:border-on-surface transition-colors placeholder:text-on-surface/40 uppercase resize-none" placeholder="Opišite vašu ideju" data-i18n-placeholder rows="4"></textarea>
-                    </div>
-                    <p id="form-status" class="font-label-bold" role="status" aria-live="polite"></p>
-                    <button class="w-full bg-pink-accent text-white border-[3px] border-on-surface py-6 font-headline-md uppercase text-2xl hover:opacity-90 transition-all shadow-[8px_8px_0px_0px_#ffffff] active:shadow-none active:translate-x-1 active:translate-y-1" type="submit">
-                        <span data-i18n>Pošalji upit</span>
-                    </button>
-                </form>
-            </div>
+            <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
         </div>
     </section>
 </main>

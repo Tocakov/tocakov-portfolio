@@ -13,7 +13,7 @@ const englishCopy = {
     "Angažuj": "Hire me",
     "NOVA": "NEW",
     "ESTETIKA.": "AESTHETICS.",
-    "Miloš Točaković je vizuelni umetnik i fotograf. Bavi se fotografijom i digitalizacijom umetničkih dela, kao i savremenim multimedijalnim praksama.": "Miloš Točaković is a visual artist and photographer. His practice includes photography, digitization of artworks, and contemporary multimedia work.",
+    "Miloš Točaković je vizuelni umetnik i fotograf. Bavi se fotografijom, tradicionalnom umetnošću kao i savremenim multimedijalnim praksama.": "Miloš Točaković is a visual artist and photographer. His practice includes photography, traditional art, and contemporary multimedia work.",
     "Pogledaj Radove": "View selected works",
     "Pogledaj portfolio": "View portfolio",
     "Status Sistema": "System status",
@@ -36,7 +36,7 @@ const englishCopy = {
     "Umetnički fokus:": "Artistic focus:",
     "Fotografija i digitalizacija umetničkih dela": "Photography and digitization of artworks",
     "Savremene multimedijalne prakse": "Contemporary multimedia practices",
-    "Digitalna slika, slikarstvo i fotografija": "Digital art, painting, and photography",
+    "Digitalna slika, slikarstvo i tradicionalni mediji.": "Digital art, painting, and traditional media.",
     "Obrazovanje": "Education",
     "Akademija umetnosti u Novom Sadu": "Academy of Arts in Novi Sad",
     "Master studije fotografije — u toku.": "Master's studies in photography — in progress.",
@@ -49,7 +49,8 @@ const englishCopy = {
     "• Saradnja sa Festivalom studentskog pozorišta / SNP.": "• Collaboration with the Student Theatre Festival / Serbian National Theatre.",
     "• Saradnja sa Fondacijom „Laza Kostić“.": "• Collaboration with the Laza Kostić Foundation.",
     "Tehničke veštine": "Technical skills",
-    "Profesionalna fotografska oprema; Adobe Photoshop CC, Lightroom CC, Capture One Pro, InDesign, Microsoft Word i ChaiNNer.": "Professional photography equipment; Adobe Photoshop CC, Lightroom CC, Capture One Pro, InDesign, Microsoft Word, and ChaiNNer.",
+    "Profesionalna fotografska oprema; Adobe Photoshop CC, Lightroom CC, Capture One Pro, InDesign, Affinity 3 i ChaiNNer.": "Professional photography equipment; Adobe Photoshop CC, Lightroom CC, Capture One Pro, InDesign, Affinity 3, and ChaiNNer.",
+    "Korišćenje AI alata u online okruženju i pretreniranih modela na računaru.": "Use of online AI tools and pretrained models on a computer.",
     "Izložbe i učešća": "Exhibitions and participation",
     "Beograd": "Belgrade",
     "Belgrade Photo Month": "Belgrade Photo Month",
@@ -72,7 +73,12 @@ const englishCopy = {
     "Esej i umetnički rad — Crowned Dogs": "Essay and artwork — Crowned Dogs",
     "Otvori publikaciju ↗": "Read the publication ↗",
     "Hajde da stvaramo": "Let's create",
-    "Otvoren sam za nove projekte i upite galerija. Za saradnju ili umetničke konsultacije, pišite mi.": "I am open to new projects and gallery inquiries. For collaborations or art consultations, get in touch.",
+    "Otvoren sam za nove projekte, kolaboracije i profesionalnu saradnju. Za saradnju ili umetničke konsultacije, pišite mi.": "I am open to new projects, collaborations, and professional partnerships. For collaborations or art consultations, get in touch.",
+    "Kopiraj elektronsku poštu": "Copy email address",
+    "Kopiraj telefon": "Copy phone number",
+    "Kopirano ✓": "Copied ✓",
+    "Kontakt podatak je kopiran u privremenu memoriju.": "Contact detail copied to the clipboard.",
+    "Kopiranje nije uspelo. Izaberite i kopirajte podatak ručno.": "Copying failed. Select and copy the detail manually.",
     "Email upit": "Email inquiries",
     "Telefon": "Phone",
     "Društvene mreže": "Social media",
@@ -213,6 +219,7 @@ function applyLanguage(language) {
         button.classList.toggle("is-active", selected);
         button.setAttribute("aria-pressed", String(selected));
     });
+    document.querySelectorAll(".contact-copy-button").forEach(updateCopyButtonLabel);
 
     prepareHeadingLetters();
 }
@@ -229,22 +236,34 @@ document.querySelectorAll("[data-language]").forEach((button) => {
     });
 });
 
-document.getElementById("contact-form").addEventListener("submit", (event) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    if (!form.reportValidity()) return;
+function updateCopyButtonLabel(button) {
+    const label = button.querySelector(".contact-copy-button__label");
+    const source = button.dataset.copyState === "copied" ? button.dataset.copySuccess : button.dataset.copyLabel;
+    label.textContent = localized(source);
+}
 
-    const data = new FormData(form);
-    const subject = `${localized("Upit za saradnju: ")}${data.get("category")}`;
-    const body = [
-        `${localized("Ime i prezime: ")}${data.get("name")}`,
-        `${localized("Email za odgovor: ")}${data.get("email")}`,
-        `${localized("Kategorija projekta: ")}${data.get("category")}`,
-        "",
-        `${localized("Poruka:\n")}${data.get("message")}`
-    ].join("\n");
-    document.getElementById("form-status").textContent = localized("Otvaram email aplikaciju — pošaljite poruku iz nje.");
-    window.location.href = `mailto:milostocakovic.photo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+const copyResetTimers = new WeakMap();
+
+document.querySelectorAll(".contact-copy-button").forEach((button) => {
+    button.addEventListener("click", async () => {
+        const status = document.getElementById("copy-status");
+        try {
+            if (!navigator.clipboard?.writeText) throw new Error("Clipboard API unavailable");
+            await navigator.clipboard.writeText(button.dataset.copyValue);
+            button.dataset.copyState = "copied";
+            updateCopyButtonLabel(button);
+            status.textContent = localized("Kontakt podatak je kopiran u privremenu memoriju.");
+            window.clearTimeout(copyResetTimers.get(button));
+            const resetTimer = window.setTimeout(() => {
+                delete button.dataset.copyState;
+                updateCopyButtonLabel(button);
+                copyResetTimers.delete(button);
+            }, 2000);
+            copyResetTimers.set(button, resetTimer);
+        } catch {
+            status.textContent = localized("Kopiranje nije uspelo. Izaberite i kopirajte podatak ručno.");
+        }
+    });
 });
 
 let introComplete = false;

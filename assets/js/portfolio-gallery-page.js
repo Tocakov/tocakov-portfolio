@@ -4,7 +4,6 @@ const galleryStatus = document.getElementById("gallery-status");
 const seriesIntro = document.getElementById("series-intro");
 const seriesIntroTitle = document.getElementById("series-intro-title");
 const seriesIntroDescription = document.getElementById("series-intro-description");
-const seriesIntroMedia = document.getElementById("series-intro-media");
 const seriesIntroCover = document.getElementById("series-intro-cover");
 const seriesIntroFallback = document.getElementById("series-intro-fallback");
 const imageViewer = document.getElementById("image-viewer");
@@ -113,25 +112,15 @@ function seriesImages(series) {
     return images;
 }
 
-function setImageLoadingState(media, image, fallback) {
-    const showLoaded = () => {
-        media.classList.remove("is-loading", "is-error");
-        media.classList.add("is-loaded");
-        if (fallback) fallback.hidden = true;
-    };
+function setImageErrorState(image, fallback) {
     const showError = () => {
-        media.classList.remove("is-loading", "is-loaded");
-        media.classList.add("is-error");
         if (fallback) fallback.hidden = false;
         image.hidden = true;
     };
 
-    image.addEventListener("load", showLoaded, { once: true });
-    image.addEventListener("error", showError, { once: true });
-    if (image.complete) {
-        if (image.naturalWidth) showLoaded();
-        else showError();
-    }
+    image.hidden = false;
+    image.onerror = showError;
+    if (image.complete && !image.naturalWidth) showError();
 }
 
 function renderSeries() {
@@ -147,7 +136,7 @@ function renderSeries() {
         title.textContent = localizedSeriesName(series.title);
 
         const media = document.createElement("span");
-        media.className = "series-card__media is-loading";
+        media.className = "series-card__media";
         const image = document.createElement("img");
         image.className = "series-card__image";
         image.alt = `${language === "en" ? "Series cover:" : "Naslovna fotografija serije:"} ${localizedSeriesName(series.title)}`;
@@ -161,8 +150,7 @@ function renderSeries() {
         fallback.textContent = language === "en" ? "Series cover will be added" : "Naslovna fotografija serije biće dodata";
         fallback.hidden = Boolean(cover);
         media.append(image, fallback);
-        if (cover) setImageLoadingState(media, image, fallback);
-        else media.classList.remove("is-loading");
+        if (cover) setImageErrorState(image, fallback);
 
         card.append(title, media);
         card.addEventListener("click", () => openSeries(series));
@@ -198,13 +186,12 @@ function renderSeriesIntro() {
     seriesIntroCover.hidden = !cover;
     seriesIntroFallback.hidden = Boolean(cover);
     seriesIntroFallback.textContent = language === "en" ? "Series cover will be added" : "Naslovna fotografija serije biće dodata";
-    seriesIntroMedia.classList.toggle("is-loading", Boolean(cover));
-    seriesIntroMedia.classList.remove("is-loaded", "is-error");
     seriesIntroCover.removeAttribute("src");
+    seriesIntroCover.onerror = null;
     if (cover) {
         seriesIntroCover.src = cover;
         seriesIntroCover.alt = `${language === "en" ? "First image in" : "Prvi rad iz serije"} ${localizedSeriesName(currentSeries.title)}`;
-        setImageLoadingState(seriesIntroMedia, seriesIntroCover, seriesIntroFallback);
+        setImageErrorState(seriesIntroCover, seriesIntroFallback);
     } else {
         seriesIntroCover.alt = "";
     }
