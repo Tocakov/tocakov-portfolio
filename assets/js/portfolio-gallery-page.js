@@ -5,6 +5,7 @@ const seriesIntro = document.getElementById("series-intro");
 const seriesIntroTitle = document.getElementById("series-intro-title");
 const seriesIntroDescription = document.getElementById("series-intro-description");
 const seriesImagesGrid = document.getElementById("series-images");
+const seriesFootnotes = document.getElementById("series-footnotes");
 const galleryManifest = document.getElementById("gallery-manifest");
 const galleryManifestText = document.getElementById("gallery-manifest-text");
 const imageViewer = document.getElementById("image-viewer");
@@ -36,6 +37,17 @@ const altTranslations = {
     "Digitalna slika, test rad 3": "Digital artwork, test work 3",
     "Digitalna slika, test rad 4": "Digital artwork, test work 4"
 };
+const superscriptDigits = {
+    "¹": "1",
+    "²": "2",
+    "³": "3",
+    "⁴": "4",
+    "⁵": "5",
+    "⁶": "6",
+    "⁷": "7",
+    "⁸": "8",
+    "⁹": "9"
+};
 
 let language = (() => {
     try {
@@ -62,6 +74,67 @@ function localizedAlt(alt) {
 
 function localizedText(text) {
     return text?.[language] || text?.sr || "";
+}
+
+function splitStatementFootnotes(statement) {
+    const paragraphs = statement.split(/\n{2,}/);
+    const firstFootnote = paragraphs.findIndex((paragraph) => /^[¹²³⁴⁵⁶⁷⁸⁹]\s/.test(paragraph));
+    if (firstFootnote < 0) return { body: statement, notes: [] };
+
+    const notes = [];
+    paragraphs.slice(firstFootnote).forEach((paragraph) => {
+        const match = paragraph.match(/^([¹²³⁴⁵⁶⁷⁸⁹])\s+([\s\S]*)$/);
+        if (match) {
+            notes.push({ number: superscriptDigits[match[1]], text: match[2] });
+        } else if (notes.length) {
+            notes[notes.length - 1].text += `\n\n${paragraph}`;
+        }
+    });
+
+    return {
+        body: paragraphs.slice(0, firstFootnote).join("\n\n"),
+        notes
+    };
+}
+
+function appendStatementText(container, text, noteNumbers = new Set()) {
+    const tokenPattern = /https?:\/\/[^\s]+|[¹²³⁴⁵⁶⁷⁸⁹]/g;
+    let lastIndex = 0;
+
+    for (const match of text.matchAll(tokenPattern)) {
+        container.append(document.createTextNode(text.slice(lastIndex, match.index)));
+        const token = match[0];
+        if (token.startsWith("http://") || token.startsWith("https://")) {
+            let url = token;
+            while (/[.,;:!?)}\]]$/.test(url)) url = url.slice(0, -1);
+            if (url) {
+                const link = document.createElement("a");
+                link.href = url;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.textContent = url;
+                container.append(link, document.createTextNode(token.slice(url.length)));
+            } else {
+                container.append(document.createTextNode(token));
+            }
+        } else {
+            const number = superscriptDigits[token];
+            if (noteNumbers.has(number)) {
+                const reference = document.createElement("sup");
+                const link = document.createElement("a");
+                link.className = "series-footnote-reference";
+                link.href = `#series-footnote-${number}`;
+                link.textContent = number;
+                reference.append(link);
+                container.append(reference);
+            } else {
+                container.append(document.createTextNode(token));
+            }
+        }
+        lastIndex = match.index + token.length;
+    }
+
+    container.append(document.createTextNode(text.slice(lastIndex)));
 }
 
 function setLanguage(nextLanguage) {
@@ -193,9 +266,24 @@ function openSeries(series) {
 function renderSeriesIntro() {
     if (!currentSeries) return;
     seriesIntroTitle.textContent = localizedSeriesName(currentSeries.title);
-    const statement = localizedText(currentSeries.statement);
-    seriesIntroDescription.textContent = statement;
-    seriesIntroDescription.hidden = !statement;
+    const { body, notes } = splitStatementFootnotes(localizedText(currentSeries.statement));
+    const noteNumbers = new Set(notes.map((note) => note.number));
+    seriesIntroDescription.replaceChildren();
+    appendStatementText(seriesIntroDescription, body, noteNumbers);
+    seriesIntroDescription.hidden = !body;
+    seriesFootnotes.replaceChildren();
+    seriesFootnotes.hidden = notes.length === 0;
+    seriesFootnotes.setAttribute("aria-label", language === "en" ? "Footnotes" : "Fusnote");
+    if (notes.length) {
+        const list = document.createElement("ol");
+        notes.forEach((note) => {
+            const item = document.createElement("li");
+            item.id = `series-footnote-${note.number}`;
+            appendStatementText(item, note.text);
+            list.append(item);
+        });
+        seriesFootnotes.append(list);
+    }
     seriesImagesGrid.replaceChildren();
     seriesImages(currentSeries).forEach((image, index) => {
         const button = document.createElement("button");

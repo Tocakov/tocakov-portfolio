@@ -1849,6 +1849,41 @@ h4,
     font: 400 clamp(17px, 1.7vw, 21px)/1.7 "Space Grotesk", sans-serif;
 }
 
+.series-intro__description a,
+.series-footnotes a {
+    color: var(--portfolio-blue);
+    text-decoration: underline;
+    text-underline-offset: .15em;
+}
+
+.series-footnotes {
+    margin-top: clamp(28px, 4vw, 48px);
+    font: 400 .8rem/1.55 "Space Grotesk", sans-serif;
+}
+
+.series-footnotes ol {
+    margin: 0;
+    padding-left: 1.75em;
+}
+
+.series-footnotes li {
+    padding-left: .35em;
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+}
+
+.series-footnotes li + li {
+    margin-top: 1em;
+}
+
+.series-footnotes a {
+    overflow-wrap: anywhere;
+}
+
+.series-footnote-reference {
+    text-decoration: none !important;
+}
+
 .series-intro__visual {
     display: flex;
     align-items: center;
