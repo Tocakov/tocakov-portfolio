@@ -1843,7 +1843,8 @@ h4,
 }
 
 .series-intro__description {
-    max-width: 34em;
+    width: 100%;
+    max-width: none;
     margin: 0;
     font: 400 clamp(17px, 1.7vw, 21px)/1.7 "Space Grotesk", sans-serif;
 }
