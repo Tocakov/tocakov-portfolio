@@ -1934,6 +1934,7 @@ h4,
     position: fixed;
     inset: 0;
     z-index: 200;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 58px minmax(0, 1fr) 58px;
     align-items: center;
@@ -1942,6 +1943,8 @@ h4,
     padding: 70px clamp(18px, 5vw, 72px);
     background: rgb(0 0 0 / 94%);
     cursor: zoom-out;
+    overscroll-behavior: contain;
+    touch-action: none;
 }
 
 .image-viewer[hidden] {
@@ -1956,6 +1959,19 @@ h4,
     max-height: calc(100vh - 140px);
     object-fit: contain;
     cursor: default;
+    transform-origin: center;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    will-change: transform;
+}
+
+.image-viewer__image.is-zoomed {
+    cursor: grab;
+}
+
+.image-viewer__image.is-dragging {
+    cursor: grabbing;
 }
 
 .image-viewer__error {

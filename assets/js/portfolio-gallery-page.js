@@ -12,6 +12,7 @@ const imageViewer = document.getElementById("image-viewer");
 const viewerImage = document.getElementById("viewer-image");
 const viewerError = document.getElementById("viewer-error");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const galleryHistoryKey = "portfolioGallery";
 
 const seriesNames = {
     "Bačija": "Bačija",
@@ -63,6 +64,12 @@ let currentImageIndex = 0;
 let returnFocus = null;
 let returnFocusIndex = 0;
 let selectedSeriesIndex = 0;
+let seriesTransitionTimer = null;
+let viewerScale = 1;
+let viewerOffsetX = 0;
+let viewerOffsetY = 0;
+let viewerGesture = null;
+const activeViewerPointers = new Map();
 
 function localizedSeriesName(name) {
     return language === "en" ? (seriesNames[name] || name) : name;
@@ -74,6 +81,26 @@ function localizedAlt(alt) {
 
 function localizedText(text) {
     return text?.[language] || text?.sr || "";
+}
+
+function getGalleryHistoryState(state = window.history.state) {
+    return state && typeof state === "object" ? state[galleryHistoryKey] : null;
+}
+
+function writeGalleryHistory(view, details = {}, replace = false) {
+    const currentState = window.history.state;
+    const nextState = {
+        ...(currentState && typeof currentState === "object" ? currentState : {}),
+        [galleryHistoryKey]: { view, ...details }
+    };
+    window.history[replace ? "replaceState" : "pushState"](nextState, "", window.location.href);
+}
+
+function initializeGalleryHistory() {
+    const state = getGalleryHistoryState();
+    if (!state || !["list", "series", "viewer"].includes(state.view)) {
+        writeGalleryHistory("list", {}, true);
+    }
 }
 
 function splitStatementFootnotes(statement) {
@@ -246,12 +273,16 @@ function renderSeries() {
     });
 }
 
-function openSeries(series) {
+function openSeries(series, updateHistory = true) {
+    if (updateHistory) writeGalleryHistory("series", { seriesTitle: series.title });
+    if (seriesTransitionTimer !== null) window.clearTimeout(seriesTransitionTimer);
     currentSeries = series;
     selectedSeriesIndex = allSeries.indexOf(series);
     currentImageIndex = 0;
     seriesSelection.classList.add("is-leaving");
-    window.setTimeout(() => {
+    seriesTransitionTimer = window.setTimeout(() => {
+        seriesTransitionTimer = null;
+        if (currentSeries !== series) return;
         seriesSelection.hidden = true;
         seriesSelection.classList.remove("is-leaving");
         seriesIntro.hidden = false;
@@ -261,6 +292,20 @@ function openSeries(series) {
         seriesIntro.scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth", block: "start" });
         document.getElementById("series-back").focus({ preventScroll: true });
     }, reducedMotion.matches ? 0 : 280);
+}
+
+function showSeriesImmediately(series) {
+    if (seriesTransitionTimer !== null) window.clearTimeout(seriesTransitionTimer);
+    seriesTransitionTimer = null;
+    currentSeries = series;
+    selectedSeriesIndex = allSeries.indexOf(series);
+    currentImageIndex = 0;
+    seriesSelection.hidden = true;
+    seriesSelection.classList.remove("is-leaving", "is-entering");
+    seriesIntro.hidden = false;
+    seriesIntro.classList.remove("is-entering");
+    renderSeriesIntro();
+    seriesIntro.scrollIntoView({ behavior: "auto", block: "start" });
 }
 
 function renderSeriesIntro() {
@@ -308,9 +353,12 @@ function renderSeriesIntro() {
     });
 }
 
-function returnToSeries() {
+function showSeriesList() {
+    if (seriesTransitionTimer !== null) window.clearTimeout(seriesTransitionTimer);
+    seriesTransitionTimer = null;
     imageViewer.hidden = true;
     document.body.classList.remove("image-viewer-open");
+    resetViewerZoom();
     seriesIntro.hidden = true;
     seriesSelection.hidden = false;
     seriesSelection.classList.add("is-entering");
@@ -319,11 +367,23 @@ function returnToSeries() {
     seriesGrid.children[selectedSeriesIndex]?.focus({ preventScroll: true });
 }
 
-function openViewer(index, trigger) {
+function returnToSeries() {
+    if (getGalleryHistoryState()?.view !== "list") {
+        window.history.back();
+        return;
+    }
+    showSeriesList();
+}
+
+function openViewer(index, trigger, updateHistory = true) {
     if (!currentSeries || !seriesImages(currentSeries).length) return;
+    if (updateHistory) {
+        writeGalleryHistory("viewer", { seriesTitle: currentSeries.title, imageIndex: index });
+    }
     returnFocus = trigger;
     returnFocusIndex = index;
     currentImageIndex = index;
+    resetViewerZoom();
     updateViewerImage();
     imageViewer.hidden = false;
     document.body.classList.add("image-viewer-open");
@@ -359,14 +419,144 @@ function stepViewer(direction) {
     const images = currentSeries ? seriesImages(currentSeries) : [];
     if (!images.length) return;
     currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+    resetViewerZoom();
+    if (getGalleryHistoryState()?.view === "viewer") {
+        writeGalleryHistory("viewer", { seriesTitle: currentSeries.title, imageIndex: currentImageIndex }, true);
+    }
     updateViewerImage();
     preloadAdjacentImages();
 }
 
-function closeViewer() {
+function hideViewer() {
     imageViewer.hidden = true;
     document.body.classList.remove("image-viewer-open");
+    resetViewerZoom();
     returnFocus?.focus({ preventScroll: true });
+}
+
+function closeViewer() {
+    if (getGalleryHistoryState()?.view === "viewer") {
+        window.history.back();
+        return;
+    }
+    hideViewer();
+}
+
+function restoreGalleryHistory(state) {
+    if (state?.view === "list") {
+        if (currentSeries || !seriesIntro.hidden || !imageViewer.hidden) showSeriesList();
+        return;
+    }
+
+    const series = allSeries.find((item) => item.title === state?.seriesTitle);
+    if (!series) {
+        showSeriesList();
+        writeGalleryHistory("list", {}, true);
+        return;
+    }
+
+    if (state.view === "series") {
+        if (currentSeries !== series) openSeries(series, false);
+        else if (!imageViewer.hidden) hideViewer();
+        return;
+    }
+
+    if (state.view === "viewer") {
+        if (currentSeries !== series) showSeriesImmediately(series);
+        const images = seriesImages(series);
+        const index = Math.max(0, Math.min(Number(state.imageIndex) || 0, images.length - 1));
+        openViewer(index, seriesImagesGrid.children[index], false);
+    }
+}
+
+function resetViewerZoom() {
+    viewerScale = 1;
+    viewerOffsetX = 0;
+    viewerOffsetY = 0;
+    viewerGesture = null;
+    activeViewerPointers.clear();
+    viewerImage.classList.remove("is-zoomed", "is-dragging");
+    viewerImage.style.transform = "";
+}
+
+function applyViewerZoom() {
+    viewerScale = Math.max(1, Math.min(5, viewerScale));
+    if (viewerScale === 1) {
+        viewerOffsetX = 0;
+        viewerOffsetY = 0;
+    } else {
+        const maxX = Math.max(0, (viewerImage.offsetWidth * viewerScale - window.innerWidth) / 2);
+        const maxY = Math.max(0, (viewerImage.offsetHeight * viewerScale - window.innerHeight) / 2);
+        viewerOffsetX = Math.max(-maxX, Math.min(maxX, viewerOffsetX));
+        viewerOffsetY = Math.max(-maxY, Math.min(maxY, viewerOffsetY));
+    }
+    viewerImage.style.transform = `translate3d(${viewerOffsetX}px, ${viewerOffsetY}px, 0) scale(${viewerScale})`;
+    viewerImage.classList.toggle("is-zoomed", viewerScale > 1);
+}
+
+function zoomViewer(factor) {
+    viewerScale *= factor;
+    applyViewerZoom();
+}
+
+function pointerDistance(points) {
+    const [first, second] = points;
+    return Math.hypot(second.x - first.x, second.y - first.y);
+}
+
+function startViewerPointerGesture() {
+    const points = [...activeViewerPointers.values()];
+    if (points.length > 1) {
+        viewerGesture = { type: "pinch", distance: Math.max(1, pointerDistance(points)), scale: viewerScale };
+        viewerImage.classList.remove("is-dragging");
+    } else if (viewerScale > 1 && points.length === 1) {
+        const [point] = points;
+        viewerGesture = {
+            type: "pan",
+            pointerId: point.id,
+            x: point.x,
+            y: point.y,
+            offsetX: viewerOffsetX,
+            offsetY: viewerOffsetY
+        };
+        viewerImage.classList.add("is-dragging");
+    } else {
+        viewerGesture = null;
+    }
+}
+
+function handleViewerPointerDown(event) {
+    if (imageViewer.hidden || (event.pointerType === "mouse" && event.button !== 0)) return;
+    activeViewerPointers.set(event.pointerId, { id: event.pointerId, x: event.clientX, y: event.clientY });
+    viewerImage.setPointerCapture(event.pointerId);
+    if (activeViewerPointers.size > 1 || viewerScale > 1) {
+        event.preventDefault();
+        startViewerPointerGesture();
+    }
+}
+
+function handleViewerPointerMove(event) {
+    if (!activeViewerPointers.has(event.pointerId)) return;
+    activeViewerPointers.set(event.pointerId, { id: event.pointerId, x: event.clientX, y: event.clientY });
+    if (viewerGesture?.type === "pinch" && activeViewerPointers.size > 1) {
+        viewerScale = viewerGesture.scale * pointerDistance([...activeViewerPointers.values()]) / viewerGesture.distance;
+        applyViewerZoom();
+    } else if (viewerGesture?.type === "pan" && viewerGesture.pointerId === event.pointerId) {
+        viewerOffsetX = viewerGesture.offsetX + event.clientX - viewerGesture.x;
+        viewerOffsetY = viewerGesture.offsetY + event.clientY - viewerGesture.y;
+        applyViewerZoom();
+    }
+}
+
+function handleViewerPointerEnd(event) {
+    activeViewerPointers.delete(event.pointerId);
+    viewerImage.classList.remove("is-dragging");
+    startViewerPointerGesture();
+}
+
+function handleGalleryPopState(event) {
+    const state = getGalleryHistoryState(event.state);
+    if (state) restoreGalleryHistory(state);
 }
 
 document.querySelectorAll("[data-language]").forEach((button) => {
@@ -382,6 +572,26 @@ imageViewer.addEventListener("click", (event) => {
     if (event.target === imageViewer) closeViewer();
 });
 viewerImage.addEventListener("click", (event) => event.stopPropagation());
+imageViewer.addEventListener("wheel", (event) => {
+    if (imageViewer.hidden || (!event.ctrlKey && event.target !== viewerImage)) return;
+    event.preventDefault();
+    zoomViewer(Math.exp(-event.deltaY * 0.002));
+}, { passive: false });
+viewerImage.addEventListener("pointerdown", handleViewerPointerDown);
+viewerImage.addEventListener("pointermove", handleViewerPointerMove);
+viewerImage.addEventListener("pointerup", handleViewerPointerEnd);
+viewerImage.addEventListener("pointercancel", handleViewerPointerEnd);
+
+let gestureStartScale = 1;
+imageViewer.addEventListener("gesturestart", (event) => {
+    event.preventDefault();
+    gestureStartScale = viewerScale;
+}, { passive: false });
+imageViewer.addEventListener("gesturechange", (event) => {
+    event.preventDefault();
+    viewerScale = gestureStartScale * event.scale;
+    applyViewerZoom();
+}, { passive: false });
 
 document.addEventListener("keydown", (event) => {
     if (imageViewer.hidden) return;
@@ -394,6 +604,15 @@ document.addEventListener("keydown", (event) => {
     } else if (event.key === "ArrowRight") {
         event.preventDefault();
         stepViewer(1);
+    } else if (event.key === "+" || event.key === "=") {
+        event.preventDefault();
+        zoomViewer(1.2);
+    } else if (event.key === "-") {
+        event.preventDefault();
+        zoomViewer(1 / 1.2);
+    } else if (event.key === "0") {
+        event.preventDefault();
+        resetViewerZoom();
     } else if (event.key === "Tab") {
         const controls = [
             document.getElementById("viewer-close"),
@@ -413,6 +632,8 @@ document.addEventListener("keydown", (event) => {
 });
 
 setLanguage(language);
+initializeGalleryHistory();
+window.addEventListener("popstate", handleGalleryPopState);
 
 fetch("assets/data/gallery.json")
     .then((response) => {
@@ -426,6 +647,7 @@ fetch("assets/data/gallery.json")
             Array.isArray(category.series) ? category.series : []
         );
         renderSeries();
+        restoreGalleryHistory(getGalleryHistoryState());
         if (!allSeries.length) {
             galleryStatus.textContent = language === "en" ? "No series have been added yet." : "Serije još nisu dodate.";
             galleryStatus.hidden = false;
