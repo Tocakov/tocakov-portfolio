@@ -1,68 +1,1928 @@
 {
+  "manifest": {
+    "sr": "",
+    "en": ""
+  },
   "categories": {
-    "photography": {
-      "cover": "assets/images/gallery/optimized/photography/cover.webp",
+    "portfolio": {
       "series": [
         {
-          "title": "Pejzaži",
-          "cover": "assets/images/gallery/optimized/photography/landscape-cover.webp",
+          "title": "Bačija",
+          "titleEn": "Bačija",
+          "cover": "assets/images/gallery/Bačija/bacija-01-cover.webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-01-cover.webp",
+          "statement": {
+            "sr": "Pored živopisne prirode od koje zastaje dah, na obroncima planine Miroč, u srcu Nacionalnog parka Đerdap, krije se i jedna zanimljiva priča.\n\nJoš od davnina održao se običaj okupljanja stoke u zajednički tor. Taj običaj se kod nas naziva bačija.\n\nJunakinja ove priče je baka Mileva, koja se čuvanjem ovaca bavi još od detinjstva. Iako je u poznim godinama, svakodnevno energično prelazi i više od deset kilometara nepristupačnog terena, kroz guste šume i prostrane livade.\n\nJutro počinje ispijanjem prve kafe, a zatim sledi ručna muža, koju vredne žene zajedničkim snagama obavljaju veoma brzo.\n\nDok druge žene od mleka kasnije prave sir, Mileva kreće u svoju dnevnu rutinu.\n\nKada se ispaša završi i ovce budu site, dan se privodi kraju večernjom mužom, nakon koje se Mileva vraća u svoj skromni dom.\n\nNjen posao se ciklično ponavlja sve dok ima zelene trave i dok snežni smetovi ne zaveju pašnjake. Tada se ovce razdvajaju i vraćaju svojim vlasnicima, kod kojih prezimljuju čekajući novo proleće.\n\nOva serija fotografija nastala je kao završni rad drugog semestra prve godine studija na Odseku za fotografiju Akademije umetnosti u Novom Sadu, pod mentorstvom prof. dr um. Jelene Kovačević Vorgučin.\n\nSeriju čine fotografije dobijene skeniranjem negativa, kao i digitalne fotografije nastale kao nezavisna dopuna radu.",
+            "en": "Beyond the breathtakingly vivid natural landscape, on the slopes of Mount Miroč in the heart of Đerdap National Park, lies a remarkable story.\n\nSince time immemorial, people here have kept the custom of gathering livestock in a shared pen. This practice is known locally as a bačija.\n\nThe protagonist of this story is Grandma Mileva, who has tended sheep since childhood. Though now in her later years, she energetically walks more than ten kilometres each day across difficult terrain, through dense forests and vast meadows.\n\nThe morning begins with a first cup of coffee, followed by hand-milking, which the hardworking women carry out together with remarkable speed.\n\nWhile the other women later make cheese from the milk, Mileva sets off on her daily routine.\n\nWhen grazing is over and the sheep have had their fill, the day comes to an end with the evening milking, after which Mileva returns to her modest home.\n\nHer work follows the same cycle for as long as green grass grows and snowdrifts have not yet buried the pastures. Then the sheep are separated and returned to their owners, where they spend the winter waiting for a new spring.\n\nThis photographic series was created as my final project for the second semester of my first year in the Photography Department at the Academy of Arts in Novi Sad, under the mentorship of Prof. Jelena Kovačević Vorgučin, PhD.\n\nThe series consists of photographs made by scanning negatives, as well as digital photographs created as an independent extension of the work."
+          },
           "images": [
             {
-              "src": "assets/images/gallery/optimized/photography/landscape-01.webp",
-              "alt": "Fotografija pejzaža, rad 1"
+              "src": "assets/images/gallery/Bačija/bacija-02.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-02.webp",
+              "alt": "Bačija — rad 02",
+              "altEn": "Bačija — work 02"
             },
             {
-              "src": "assets/images/gallery/optimized/photography/landscape-02.webp",
-              "alt": "Fotografija pejzaža, rad 2"
+              "src": "assets/images/gallery/Bačija/bacija-03.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-03.webp",
+              "alt": "Bačija — rad 03",
+              "altEn": "Bačija — work 03"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-04.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-04.webp",
+              "alt": "Bačija — rad 04",
+              "altEn": "Bačija — work 04"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-05.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-05.webp",
+              "alt": "Bačija — rad 05",
+              "altEn": "Bačija — work 05"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-06.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-06.webp",
+              "alt": "Bačija — rad 06",
+              "altEn": "Bačija — work 06"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-07.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-07.webp",
+              "alt": "Bačija — rad 07",
+              "altEn": "Bačija — work 07"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-08.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-08.webp",
+              "alt": "Bačija — rad 08",
+              "altEn": "Bačija — work 08"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-09.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-09.webp",
+              "alt": "Bačija — rad 09",
+              "altEn": "Bačija — work 09"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-10.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-10.webp",
+              "alt": "Bačija — rad 10",
+              "altEn": "Bačija — work 10"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-11.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-11.webp",
+              "alt": "Bačija — rad 11",
+              "altEn": "Bačija — work 11"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-12.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-12.webp",
+              "alt": "Bačija — rad 12",
+              "altEn": "Bačija — work 12"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-13.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-13.webp",
+              "alt": "Bačija — rad 13",
+              "altEn": "Bačija — work 13"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-14.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-14.webp",
+              "alt": "Bačija — rad 14",
+              "altEn": "Bačija — work 14"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-15.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-15.webp",
+              "alt": "Bačija — rad 15",
+              "altEn": "Bačija — work 15"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-16.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-16.webp",
+              "alt": "Bačija — rad 16",
+              "altEn": "Bačija — work 16"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-17.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-17.webp",
+              "alt": "Bačija — rad 17",
+              "altEn": "Bačija — work 17"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-18.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-18.webp",
+              "alt": "Bačija — rad 18",
+              "altEn": "Bačija — work 18"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-19.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-19.webp",
+              "alt": "Bačija — rad 19",
+              "altEn": "Bačija — work 19"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-20.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-20.webp",
+              "alt": "Bačija — rad 20",
+              "altEn": "Bačija — work 20"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-21.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-21.webp",
+              "alt": "Bačija — rad 21",
+              "altEn": "Bačija — work 21"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-22.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-22.webp",
+              "alt": "Bačija — rad 22",
+              "altEn": "Bačija — work 22"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-23.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-23.webp",
+              "alt": "Bačija — rad 23",
+              "altEn": "Bačija — work 23"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-24.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-24.webp",
+              "alt": "Bačija — rad 24",
+              "altEn": "Bačija — work 24"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-25.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-25.webp",
+              "alt": "Bačija — rad 25",
+              "altEn": "Bačija — work 25"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-26.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-26.webp",
+              "alt": "Bačija — rad 26",
+              "altEn": "Bačija — work 26"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-27.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-27.webp",
+              "alt": "Bačija — rad 27",
+              "altEn": "Bačija — work 27"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-28.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-28.webp",
+              "alt": "Bačija — rad 28",
+              "altEn": "Bačija — work 28"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-29.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-29.webp",
+              "alt": "Bačija — rad 29",
+              "altEn": "Bačija — work 29"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-30.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-30.webp",
+              "alt": "Bačija — rad 30",
+              "altEn": "Bačija — work 30"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-31.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-31.webp",
+              "alt": "Bačija — rad 31",
+              "altEn": "Bačija — work 31"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-32.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-32.webp",
+              "alt": "Bačija — rad 32",
+              "altEn": "Bačija — work 32"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-33.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-33.webp",
+              "alt": "Bačija — rad 33",
+              "altEn": "Bačija — work 33"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-34.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-34.webp",
+              "alt": "Bačija — rad 34",
+              "altEn": "Bačija — work 34"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-35.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-35.webp",
+              "alt": "Bačija — rad 35",
+              "altEn": "Bačija — work 35"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-36.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-36.webp",
+              "alt": "Bačija — rad 36",
+              "altEn": "Bačija — work 36"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-37.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-37.webp",
+              "alt": "Bačija — rad 37",
+              "altEn": "Bačija — work 37"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-38.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-38.webp",
+              "alt": "Bačija — rad 38",
+              "altEn": "Bačija — work 38"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-39.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-39.webp",
+              "alt": "Bačija — rad 39",
+              "altEn": "Bačija — work 39"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-40.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-40.webp",
+              "alt": "Bačija — rad 40",
+              "altEn": "Bačija — work 40"
+            },
+            {
+              "src": "assets/images/gallery/Bačija/bacija-41.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Bačija/bacija-41.webp",
+              "alt": "Bačija — rad 41",
+              "altEn": "Bačija — work 41"
+            }
+          ]
+        },
+        {
+          "title": "Forest",
+          "titleEn": "Forest",
+          "cover": "assets/images/gallery/Forest/forest-cover.webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/Forest/forest-cover.webp",
+          "statement": {
+            "sr": "Ovaj rad predstavlja interdisciplinarno istraživanje pozicije umetničkog dela u prostoru savremene umetničke prakse. Fotografisao sam šumske pejzaže koristeći modifikovan HDR proces u samoj aplikaciji, kombinujući više ekspozicija različitog trajanja. Na taj način sam ih izmestio iz stvarnosti u latentni prostor — prostor koji funkcioniše kao mentalna mapa, a ne kao dokumentarni zapis.¹ U tom procesu priroda mi je bila polazna tačka: mesto koje povezujem sa mirom i sigurnošću, a koje sam odlučio da pretvorim u nešto nestabilno i nepoznato, kao vizuelni ekvivalent unutrašnjeg stanja koje nije uvek vidljivo spolja.\n\nŠuma je tako postala digitalno, virtuelno mesto — nestabilno, čudno, mesto koje pomera granicu između poznatog i nepoznatog.\n\nPosle izvesnog vremena odlučio sam da te digitalne fotografije dodatno obradim. Oslanjajući se na svoju fascinaciju unapred treniranim ONNX modelima — koje mogu da pokrenem čak i na telefonu — kolorizovao sam ih.² Taj čin kolorizacije, vraćanja boje nečemu što je bilo lišeno boje, za mene nosi ideju postepenog vraćanja ravnoteži — procesa koji se odvija polako, kroz greške i halucinantnu interpretaciju modela,³ ali ipak ide ka nečemu celovitijem.\n\nTo je sada čudan digitalni san koji se otvara ka novoj enigmi.\n\n¹ Latent space — U mašinskom učenju, latentni prostor je kompresovana, apstraktna reprezentacija podataka u kojoj slične stavke zauzimaju bliske tačke; koristi se za generisanje novih primera interpolacijom. Za umetničku upotrebu, vidi: Yee-King, M. (2022). Latent spaces: A creative approach. In The Language of Creative AI (pp. 137–154). Springer. https://scholar.google.com.mx/citations?view_op=view_citation&hl=en&user=VND7iOIAAAAJ&sortby=pubdate&citation_for_view=VND7iOIAAAAJ:3s1wT3WcHBgC\n\n² ONNX (Open Neural Network Exchange) — Otvoreni standard za predstavljanje modela mašinskog učenja, razvijen da omogući prenos modela između različitih framework-a i izvršavanje na različitim uređajima. Zvanična specifikacija: Open Neural Network Exchange Intermediate Representation (ONNX IR) Specification. https://onnx.ai/onnx/repo-docs/IR.html ; istorijat i ekosistem: Open Neural Network Exchange, Wikipedia. https://browse.library.kiwix.org/content/wikipedia_en_all_maxi/Open_Neural_Network_Exchange\n\n³ AI hallucination — Fenomen u kome generativni modeli proizvode izlaz koji je naizgled uverljiv, ali činjenično netačan, nedosledan ili besmislen; kod slika, model može da „vidi“ ili generiše elemente koji nisu prisutni. Pregled: Ho, Z. Y., Liang, S., & Tao, D. Understanding Hallucinations in Large Visual and Language Models. ACM Computing Surveys. https://dl.acm.org/doi/pdf/10.1145/3811409 ; popularniji prikaz: Visual Hallucinations in LLMs, Communications of the ACM. https://cacm.acm.org/news/visual-hallucinations-in-llms/",
+            "en": "This work presents an interdisciplinary exploration of the position of the artwork within the space of contemporary artistic practice. I photographed forest landscapes using a modified in-app HDR process, combining multiple exposures of varying durations. In doing so, I displaced them from reality into a latent space — a space that functions as a mental map rather than a documentary record.¹ In this process, nature served as my starting point: a place I associate with peace and safety, which I chose to transform into something unstable and unfamiliar, as a visual equivalent of an internal state that isn't always visible from the outside.\n\nThe forest thus became a digital, virtual place — unstable, strange, a place that shifts the boundary between the known and the unknown.\n\nAfter some time, I decided to process these digital photographs further. Drawing on my fascination with pretrained ONNX models — which I can run even on my phone — I colorized them.² This act of colorization, of returning color to something that had been drained of it, carries for me the idea of a gradual return to balance — a process that unfolds slowly, through errors and the model's hallucinated interpretation,³ yet still moves toward something more whole.\n\nIt is now a strange digital dream that opens onto a new enigma.\n\n¹ Latent space — In machine learning, a latent space is a compressed, abstract representation of data in which similar items occupy nearby points; it is used to generate new examples through interpolation. For an artistic application, see: Yee-King, M. (2022). “Latent spaces: A creative approach.” In The Language of Creative AI (pp. 137–154). Springer. https://scholar.google.com.mx/citations?view_op=view_citation&hl=en&user=VND7iOIAAAAJ&sortby=pubdate&citation_for_view=VND7iOIAAAAJ:3s1wT3WcHBgC\n\n² ONNX (Open Neural Network Exchange) — An open standard for representing machine-learning models, developed to enable models to be transferred between frameworks and run on different devices. Official specification: Open Neural Network Exchange Intermediate Representation (ONNX IR) Specification. https://onnx.ai/onnx/repo-docs/IR.html ; history and ecosystem: Open Neural Network Exchange, Wikipedia. https://browse.library.kiwix.org/content/wikipedia_en_all_maxi/Open_Neural_Network_Exchange\n\n³ AI hallucination — A phenomenon in which generative models produce output that appears convincing but is factually inaccurate, inconsistent, or nonsensical; in images, a model may “see” or generate elements that are not present. Overview: Ho, Z. Y., Liang, S., & Tao, D. Understanding Hallucinations in Large Visual and Language Models. ACM Computing Surveys. https://dl.acm.org/doi/pdf/10.1145/3811409 ; a more accessible account: Visual Hallucinations in LLMs, Communications of the ACM. https://cacm.acm.org/news/visual-hallucinations-in-llms/"
+          },
+          "images": [
+            {
+              "src": "assets/images/gallery/Forest/forest-01.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Forest/forest-01.webp",
+              "alt": "Forest — rad 01",
+              "altEn": "Forest — work 01"
+            },
+            {
+              "src": "assets/images/gallery/Forest/forest-02.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Forest/forest-02.webp",
+              "alt": "Forest — rad 02",
+              "altEn": "Forest — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Forest/forest-03.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Forest/forest-03.webp",
+              "alt": "Forest — rad 03",
+              "altEn": "Forest — work 03"
+            },
+            {
+              "src": "assets/images/gallery/Forest/forest-04.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Forest/forest-04.webp",
+              "alt": "Forest — rad 04",
+              "altEn": "Forest — work 04"
+            },
+            {
+              "src": "assets/images/gallery/Forest/forest-05.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Forest/forest-05.webp",
+              "alt": "Forest — rad 05",
+              "altEn": "Forest — work 05"
+            },
+            {
+              "src": "assets/images/gallery/Forest/forest-06.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Forest/forest-06.webp",
+              "alt": "Forest — rad 06",
+              "altEn": "Forest — work 06"
+            },
+            {
+              "src": "assets/images/gallery/Forest/forest-07.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Forest/forest-07.webp",
+              "alt": "Forest — rad 07",
+              "altEn": "Forest — work 07"
+            },
+            {
+              "src": "assets/images/gallery/Forest/forest-08.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Forest/forest-08.webp",
+              "alt": "Forest — rad 08",
+              "altEn": "Forest — work 08"
+            }
+          ]
+        },
+        {
+          "title": "Levitacije",
+          "titleEn": "Levitations",
+          "cover": "assets/images/gallery/Levitation/levitation-cover.webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/Levitation/levitation-cover.webp",
+          "statement": {
+            "sr": "Rad „Levitacije“ na prvi pogled deluje kao skup međusobno nepovezanih fotografija, koje ne uspostavljaju ni jasnu serijsku ni konceptualnu celinu. Upravo u toj prividnoj nepovezanosti leži suština rada.\nU njegovom središtu nalazi se unutrašnji monolog kao neprekidan filozofski proces, bez jasnog početka i konačnog završetka. Kroz ponavljanje i ponovno proživljavanje trenutaka, posredstvom posmatranja digitalnih otisaka, rad istražuje subjektivni doživljaj stvarnosti i beskonačnu potragu za odgovorima na pitanja egzistencije i smisla bivstvovanja.\n\nOslanjajući se na Sinestetiku i njene teorijske dodire sa Novom fenomenologijom, rad istražuje osećajnu i afektivnu dimenziju iskustva. Fotografije postaju fragmenti unutrašnjeg iskustva, tragovi misli i pokušaji spoznaje sveta. Taj poetski i simbolički proces odvija se kroz svakodnevnu unutrašnju borbu, u susretu sa svetom, njegovim radostima i bolima.\n\nLjubav, strah, mržnja i smrt ostaju večne sile koje oblikuju i ograničavaju ljudsko postojanje.",
+            "en": "At first glance, the work Levitations appears to be a collection of unrelated photographs that form neither a clear series nor a conceptual whole. It is precisely this apparent lack of connection that lies at the heart of the work.\n\nAt its centre is an inner monologue: an uninterrupted philosophical process with no clear beginning or final conclusion. Through repetition and the reliving of moments, mediated by the viewing of digital prints, the work explores the subjective experience of reality and the endless search for answers to questions of existence and the meaning of being.\n\nDrawing on Synesthetics and its theoretical points of contact with New Phenomenology, the work explores the sensory and affective dimensions of experience. The photographs become fragments of inner experience, traces of thought, and attempts to comprehend the world. This poetic and symbolic process unfolds through an everyday inner struggle, in encounters with the world and its joys and sorrows.\n\nLove, fear, hatred, and death remain eternal forces that shape and constrain human existence."
+          },
+          "images": [
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-01-20230727-214408-01.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-01-20230727-214408-01.webp",
+              "alt": "Levitacije — rad 01",
+              "altEn": "Levitations — work 01"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-02-20230903-184127-01.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-02-20230903-184127-01.webp",
+              "alt": "Levitacije — rad 01",
+              "altEn": "Levitations — work 01"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-03-20240317-184314.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-03-20240317-184314.webp",
+              "alt": "Levitacije — rad 03",
+              "altEn": "Levitations — work 03"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-04-20240901-202556.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-04-20240901-202556.webp",
+              "alt": "Levitacije — rad 04",
+              "altEn": "Levitations — work 04"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-05-20251125-192553.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-05-20251125-192553.webp",
+              "alt": "Levitacije — rad 05",
+              "altEn": "Levitations — work 05"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-06-20260105-141649.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-06-20260105-141649.webp",
+              "alt": "Levitacije — rad 06",
+              "altEn": "Levitations — work 06"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-07-20260105-141707.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-07-20260105-141707.webp",
+              "alt": "Levitacije — rad 07",
+              "altEn": "Levitations — work 07"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-08-20260105-141713.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-08-20260105-141713.webp",
+              "alt": "Levitacije — rad 08",
+              "altEn": "Levitations — work 08"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-09-20260105-141714.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-09-20260105-141714.webp",
+              "alt": "Levitacije — rad 09",
+              "altEn": "Levitations — work 09"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-10-20260106-135911.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-10-20260106-135911.webp",
+              "alt": "Levitacije — rad 10",
+              "altEn": "Levitations — work 10"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-11-20260514-201008.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-11-20260514-201008.webp",
+              "alt": "Levitacije — rad 11",
+              "altEn": "Levitations — work 11"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-12-20260514-201307.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-12-20260514-201307.webp",
+              "alt": "Levitacije — rad 12",
+              "altEn": "Levitations — work 12"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-13-20260519-170321.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-13-20260519-170321.webp",
+              "alt": "Levitacije — rad 13",
+              "altEn": "Levitations — work 13"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-14-20260802-212313.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-14-20260802-212313.webp",
+              "alt": "Levitacije — rad 14",
+              "altEn": "Levitations — work 14"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-15-20260802-212412.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-15-20260802-212412.webp",
+              "alt": "Levitacije — rad 15",
+              "altEn": "Levitations — work 15"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-16-20260909-125318.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-16-20260909-125318.webp",
+              "alt": "Levitacije — rad 16",
+              "altEn": "Levitations — work 16"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-17-1000131098-1.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-17-1000131098-1.webp",
+              "alt": "Levitacije — rad 01",
+              "altEn": "Levitations — work 01"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-18-1000131112.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-18-1000131112.webp",
+              "alt": "Levitacije — rad 18",
+              "altEn": "Levitations — work 18"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-19-1000131278.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-19-1000131278.webp",
+              "alt": "Levitacije — rad 19",
+              "altEn": "Levitations — work 19"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-20-1768562032262.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-20-1768562032262.webp",
+              "alt": "Levitacije — rad 20",
+              "altEn": "Levitations — work 20"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-21-agc-20240721-095312959.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-21-agc-20240721-095312959.webp",
+              "alt": "Levitacije — rad 21",
+              "altEn": "Levitations — work 21"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-22-agc-20241122-102429414-raw-02-original.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-22-agc-20241122-102429414-raw-02-original.webp",
+              "alt": "Levitacije — rad 02",
+              "altEn": "Levitations — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-23-agc-20241122-102742555-raw-02-original.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-23-agc-20241122-102742555-raw-02-original.webp",
+              "alt": "Levitacije — rad 02",
+              "altEn": "Levitations — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-24-agc-20251211-105836596.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-24-agc-20251211-105836596.webp",
+              "alt": "Levitacije — rad 24",
+              "altEn": "Levitations — work 24"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-25-agc-20251220-120848173.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-25-agc-20251220-120848173.webp",
+              "alt": "Levitacije — rad 25",
+              "altEn": "Levitations — work 25"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-26-agc-20260101-125629328.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-26-agc-20260101-125629328.webp",
+              "alt": "Levitacije — rad 26",
+              "altEn": "Levitations — work 26"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-27-agc-20260101-132251996.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-27-agc-20260101-132251996.webp",
+              "alt": "Levitacije — rad 27",
+              "altEn": "Levitations — work 27"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-28-agc-20260112-145320895.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-28-agc-20260112-145320895.webp",
+              "alt": "Levitacije — rad 28",
+              "altEn": "Levitations — work 28"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-29-agc-20260112-145530168.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-29-agc-20260112-145530168.webp",
+              "alt": "Levitacije — rad 29",
+              "altEn": "Levitations — work 29"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-30-agc-20260328-160449426.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-30-agc-20260328-160449426.webp",
+              "alt": "Levitacije — rad 30",
+              "altEn": "Levitations — work 30"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-31-focused-stacked.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-31-focused-stacked.webp",
+              "alt": "Levitacije — rad 31",
+              "altEn": "Levitations — work 31"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-32-img-2025-10-28-16-11-43-348.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-32-img-2025-10-28-16-11-43-348.webp",
+              "alt": "Levitacije — rad 348",
+              "altEn": "Levitations — work 348"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-33-img-2026-05-20-19-45-50-665.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-33-img-2026-05-20-19-45-50-665.webp",
+              "alt": "Levitacije — rad 665",
+              "altEn": "Levitations — work 665"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-34-img-2026-06-09-18-27-43-407.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-34-img-2026-06-09-18-27-43-407.webp",
+              "alt": "Levitacije — rad 407",
+              "altEn": "Levitations — work 407"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-35-img-2026-08-02-19-22-29-089.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-35-img-2026-08-02-19-22-29-089.webp",
+              "alt": "Levitacije — rad 89",
+              "altEn": "Levitations — work 89"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-36-img-2026-08-02-19-22-38-351.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-36-img-2026-08-02-19-22-38-351.webp",
+              "alt": "Levitacije — rad 351",
+              "altEn": "Levitations — work 351"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-37-img-2026-08-02-19-22-45-021.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-37-img-2026-08-02-19-22-45-021.webp",
+              "alt": "Levitacije — rad 21",
+              "altEn": "Levitations — work 21"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-38-img-2026-08-02-19-23-01-112.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-38-img-2026-08-02-19-23-01-112.webp",
+              "alt": "Levitacije — rad 112",
+              "altEn": "Levitations — work 112"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-39-img-2026-08-02-19-23-19-401.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-39-img-2026-08-02-19-23-19-401.webp",
+              "alt": "Levitacije — rad 401",
+              "altEn": "Levitations — work 401"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-40-img-2026-08-02-19-49-17-016.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-40-img-2026-08-02-19-49-17-016.webp",
+              "alt": "Levitacije — rad 16",
+              "altEn": "Levitations — work 16"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-41-img-2026-08-02-19-58-46-591.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-41-img-2026-08-02-19-58-46-591.webp",
+              "alt": "Levitacije — rad 591",
+              "altEn": "Levitations — work 591"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-42-img-2026-08-02-20-00-14-918.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-42-img-2026-08-02-20-00-14-918.webp",
+              "alt": "Levitacije — rad 918",
+              "altEn": "Levitations — work 918"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-43-img-2026-08-02-20-30-20-442.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-43-img-2026-08-02-20-30-20-442.webp",
+              "alt": "Levitacije — rad 442",
+              "altEn": "Levitations — work 442"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-44-img-2026-08-02-20-38-30-589.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-44-img-2026-08-02-20-38-30-589.webp",
+              "alt": "Levitacije — rad 589",
+              "altEn": "Levitations — work 589"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-45-img-20190716-163028.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-45-img-20190716-163028.webp",
+              "alt": "Levitacije — rad 45",
+              "altEn": "Levitations — work 45"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-46-img-20220108-094151-tigr.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-46-img-20220108-094151-tigr.webp",
+              "alt": "Levitacije — rad 46",
+              "altEn": "Levitations — work 46"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-47-img-20260106-133747918-mfnr.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-47-img-20260106-133747918-mfnr.webp",
+              "alt": "Levitacije — rad 47",
+              "altEn": "Levitations — work 47"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-48-img-20260524-191432446-mfnr.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-48-img-20260524-191432446-mfnr.webp",
+              "alt": "Levitacije — rad 48",
+              "altEn": "Levitations — work 48"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-49-img-20260524-191910895-1-mfnr.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-49-img-20260524-191910895-1-mfnr.webp",
+              "alt": "Levitacije — rad 01",
+              "altEn": "Levitations — work 01"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-50-img-20260524-192541235-mfnr.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-50-img-20260524-192541235-mfnr.webp",
+              "alt": "Levitacije — rad 50",
+              "altEn": "Levitations — work 50"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-51-img-20260524-194118301-mfnr.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-51-img-20260524-194118301-mfnr.webp",
+              "alt": "Levitacije — rad 51",
+              "altEn": "Levitations — work 51"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-52-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-66.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-52-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-66.webp",
+              "alt": "Levitacije — rad 66",
+              "altEn": "Levitations — work 66"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-53-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-68.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-53-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-68.webp",
+              "alt": "Levitacije — rad 68",
+              "altEn": "Levitations — work 68"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-54-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-69.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-54-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-69.webp",
+              "alt": "Levitacije — rad 69",
+              "altEn": "Levitations — work 69"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-55-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-63.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-55-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-63.webp",
+              "alt": "Levitacije — rad 63",
+              "altEn": "Levitations — work 63"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-56-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-64.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-56-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-64.webp",
+              "alt": "Levitacije — rad 64",
+              "altEn": "Levitations — work 64"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-57-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-61.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-57-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-61.webp",
+              "alt": "Levitacije — rad 61",
+              "altEn": "Levitations — work 61"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-58-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-70.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-58-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-70.webp",
+              "alt": "Levitacije — rad 70",
+              "altEn": "Levitations — work 70"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-59-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-59.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-59-jarko-sunce-i-vlaske-vradjbine-izmedju-gvozdenih-kapija-59.webp",
+              "alt": "Levitacije — rad 59",
+              "altEn": "Levitations — work 59"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-60-lrm-export-101362448190603-20190814-114731747.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-60-lrm-export-101362448190603-20190814-114731747.webp",
+              "alt": "Levitacije — rad 60",
+              "altEn": "Levitations — work 60"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-61-lrm-export-137110673167421-20190831-103717521fix.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-61-lrm-export-137110673167421-20190831-103717521fix.webp",
+              "alt": "Levitacije — rad 61",
+              "altEn": "Levitations — work 61"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-62-lrm-export-265037237093407-20191016-222102798.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-62-lrm-export-265037237093407-20191016-222102798.webp",
+              "alt": "Levitacije — rad 62",
+              "altEn": "Levitations — work 62"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-63-lrm-export-265076620986862-20191016-222142182.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-63-lrm-export-265076620986862-20191016-222142182.webp",
+              "alt": "Levitacije — rad 63",
+              "altEn": "Levitations — work 63"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-64-pano-20260716-155351.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-64-pano-20260716-155351.webp",
+              "alt": "Levitacije — rad 64",
+              "altEn": "Levitations — work 64"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-65-pxl-20220803-173702045.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-65-pxl-20220803-173702045.webp",
+              "alt": "Levitacije — rad 65",
+              "altEn": "Levitations — work 65"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-66-pxl-20250109-223643556.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-66-pxl-20250109-223643556.webp",
+              "alt": "Levitacije — rad 66",
+              "altEn": "Levitations — work 66"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-67-pxl-20250505-191722926.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-67-pxl-20250505-191722926.webp",
+              "alt": "Levitacije — rad 67",
+              "altEn": "Levitations — work 67"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-68-pxl-20250507-155428041.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-68-pxl-20250507-155428041.webp",
+              "alt": "Levitacije — rad 68",
+              "altEn": "Levitations — work 68"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-69-pxl-20250507-161903181.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-69-pxl-20250507-161903181.webp",
+              "alt": "Levitacije — rad 69",
+              "altEn": "Levitations — work 69"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-70-pxl-20251201-113829839-raw-02-original.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-70-pxl-20251201-113829839-raw-02-original.webp",
+              "alt": "Levitacije — rad 02",
+              "altEn": "Levitations — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-71-pxl-20260301-135213830-raw-02-original.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-71-pxl-20260301-135213830-raw-02-original.webp",
+              "alt": "Levitacije — rad 02",
+              "altEn": "Levitations — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-72-pxl-20260818-143438920-raw-02-original.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-72-pxl-20260818-143438920-raw-02-original.webp",
+              "alt": "Levitacije — rad 02",
+              "altEn": "Levitations — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-73-pxl-20260926-180924448-raw-02-original.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-73-pxl-20260926-180924448-raw-02-original.webp",
+              "alt": "Levitacije — rad 02",
+              "altEn": "Levitations — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-74-pxl-20260927-123512060-raw-02-original.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-74-pxl-20260927-123512060-raw-02-original.webp",
+              "alt": "Levitacije — rad 02",
+              "altEn": "Levitations — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-75-pxl-20261026-163234744-raw-02-original-pano.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-75-pxl-20261026-163234744-raw-02-original-pano.webp",
+              "alt": "Levitacije — rad 75",
+              "altEn": "Levitations — work 75"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-76-pxl-20261026-163544347-raw-02-original.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-76-pxl-20261026-163544347-raw-02-original.webp",
+              "alt": "Levitacije — rad 02",
+              "altEn": "Levitations — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-77-resizedimage-2026-07-19-17-14-08-1218-1.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-77-resizedimage-2026-07-19-17-14-08-1218-1.webp",
+              "alt": "Levitacije — rad 01",
+              "altEn": "Levitations — work 01"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-78-resizedimage-2026-10-01-19-42-24-6933-1.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-78-resizedimage-2026-10-01-19-42-24-6933-1.webp",
+              "alt": "Levitacije — rad 01",
+              "altEn": "Levitations — work 01"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-79-resizedimage-portfolio-uzorak-4096-x-2895-bilinear-8.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-79-resizedimage-portfolio-uzorak-4096-x-2895-bilinear-8.webp",
+              "alt": "Levitacije — rad 08",
+              "altEn": "Levitations — work 08"
+            },
+            {
+              "src": "assets/images/gallery/Levitation/Levitation/levitation-80-resizedimage-portfolio-uzorak-4096-x-2895-bilinear-11.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Levitation/Levitation/levitation-80-resizedimage-portfolio-uzorak-4096-x-2895-bilinear-11.webp",
+              "alt": "Levitacije — rad 11",
+              "altEn": "Levitations — work 11"
+            }
+          ]
+        },
+        {
+          "title": "Nada",
+          "titleEn": "Hope",
+          "cover": "assets/images/gallery/Nada/nada-01-cover.webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/Nada/nada-01-cover.webp",
+          "statement": {
+            "sr": "Rad predstavlja fotografije napuštenih domaćinstava na planini Miroč.\nOva domaćinstva napuštena su pre mnogo godina. Njihovi poslednji stanovnici odavno su se odselili ili preminuli. Vreme, kao nezaobilazni činilac propadanja, počelo je da ostavlja svoj neizbrisiv trag i na ovim objektima.\nPriroda i njeni žitelji postepeno zauzimaju prostor koji su nekada nastanjivali ljudi, pronalazeći u njemu nova skloništa.\n\nNa kraju, preostaje samo nada da će se neko jednog dana vratiti i ponovo, kao nekada, rasplamsati radost oko davno ugašenih ognjišta.\n\nRad „Nada“ dobio je pohvalu žirija na studentskom konkursu za arhitektonsku fotografiju – Nagrada „Maja Momirov“, u organizaciji Udruženja BAZA, Novi Sad, 2026.",
+            "en": "This work presents photographs of abandoned homesteads on Mount Miroč.\n\nThese homes were abandoned many years ago. Their last inhabitants moved away or passed on long ago. Time, an inevitable agent of decay, has begun to leave its indelible mark on these buildings as well. Nature and its inhabitants are gradually reclaiming the spaces people once occupied, finding new shelter there.\n\nIn the end, all that remains is the hope that someone will return one day and rekindle joy around the long-extinguished hearths, as in days gone by.\n\nThe work Hope received an honourable mention from the jury in the Maja Momirov Award student competition for architectural photography, organised by the BAZA Association in Novi Sad in 2026."
+          },
+          "images": [
+            {
+              "src": "assets/images/gallery/Nada/nada-02.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Nada/nada-02.webp",
+              "alt": "Nada — rad 02",
+              "altEn": "Hope — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Nada/nada-03.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Nada/nada-03.webp",
+              "alt": "Nada — rad 03",
+              "altEn": "Hope — work 03"
+            },
+            {
+              "src": "assets/images/gallery/Nada/nada-04.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Nada/nada-04.webp",
+              "alt": "Nada — rad 04",
+              "altEn": "Hope — work 04"
+            },
+            {
+              "src": "assets/images/gallery/Nada/nada-07.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Nada/nada-07.webp",
+              "alt": "Nada — rad 07",
+              "altEn": "Hope — work 07"
+            },
+            {
+              "src": "assets/images/gallery/Nada/nada-08.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Nada/nada-08.webp",
+              "alt": "Nada — rad 08",
+              "altEn": "Hope — work 08"
+            }
+          ]
+        },
+        {
+          "title": "Novorođenče",
+          "titleEn": "Newborn",
+          "cover": "assets/images/gallery/Newborn/newborn-01.webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/Newborn/newborn-01.webp",
+          "statement": {
+            "sr": "Nikada nisam voleo da pozujem pred kamerom. Uvek sam bio iza nje…\n\nOdlučio sam da to promenim, bar jednom. Ideja mi je bila da se prikažem u praistorijskom prostoru — prostoru u kojem čovek počinje da stiče znanje, baš kao što ja, prvi put, doživljavam kako je to biti model.\n\nTaj praistorijski prostor je mesto gde čovek stvara svoja prva umetnička dela, mesto gde je siguran i slobodan — pre jezika, pre stida, pre svih uloga koje kasnije prihvatamo. To je mesto potpune ranjivosti, ali i radikalne iskrenosti tela: tela bez maske, bez poze naučene pred kamerom, bez unapred stvorenog identiteta.\n\nTrenutak kada novorođenče izlazi iz majčine utrobe je isti taj trenutak — prvi susret sa svetom, pre nego što telo nauči da se predstavi, pre nego što nauči da se sakrije. Postaviti se pred kameru u toj poziciji znači vratiti se na početak: odbaciti ulogu autora i posmatrača i, prvi put, jednostavno biti telo koje se pojavljuje.",
+            "en": "I have never been fond of posing in front of a camera. I was always behind it…\n\nI decided to change that, at least once. My idea was to depict myself within a prehistoric space — a space where man begins to gain knowledge, just as I, for the first time, am learning what it feels like to be a model.\n\nThat prehistoric space is where man creates his first works of art, a place where he is safe and free — before language, before shame, before all the roles we later come to assume. It is a place of complete vulnerability, but also of radical honesty of the body: a body without a mask, without a pose learned in front of a camera, without a preconceived identity.\n\nThe moment a newborn emerges from its mother's womb is the same moment — the first encounter with the world, before the body learns to present itself, before it learns to hide. To place myself in front of the camera in that position means returning to the beginning: shedding the role of author and observer, and, for the first time, simply being a body that appears."
+          },
+          "images": [
+            {
+              "src": "assets/images/gallery/Newborn/newborn-01.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Newborn/newborn-01.webp",
+              "alt": "Novorođenče — rad 01",
+              "altEn": "Newborn — work 01"
+            },
+            {
+              "src": "assets/images/gallery/Newborn/newborn-02.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Newborn/newborn-02.webp",
+              "alt": "Novorođenče — rad 02",
+              "altEn": "Newborn — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Newborn/newborn-03.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Newborn/newborn-03.webp",
+              "alt": "Novorođenče — rad 03",
+              "altEn": "Newborn — work 03"
+            },
+            {
+              "src": "assets/images/gallery/Newborn/newborn-04.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Newborn/newborn-04.webp",
+              "alt": "Novorođenče — rad 04",
+              "altEn": "Newborn — work 04"
+            },
+            {
+              "src": "assets/images/gallery/Newborn/newborn-05.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Newborn/newborn-05.webp",
+              "alt": "Novorođenče — rad 05",
+              "altEn": "Newborn — work 05"
+            },
+            {
+              "src": "assets/images/gallery/Newborn/newborn-06.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Newborn/newborn-06.webp",
+              "alt": "Novorođenče — rad 06",
+              "altEn": "Newborn — work 06"
+            },
+            {
+              "src": "assets/images/gallery/Newborn/newborn-07.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Newborn/newborn-07.webp",
+              "alt": "Novorođenče — rad 07",
+              "altEn": "Newborn — work 07"
+            },
+            {
+              "src": "assets/images/gallery/Newborn/newborn-09.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Newborn/newborn-09.webp",
+              "alt": "Novorođenče — rad 09",
+              "altEn": "Newborn — work 09"
+            },
+            {
+              "src": "assets/images/gallery/Newborn/newborn-10.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Newborn/newborn-10.webp",
+              "alt": "Novorođenče — rad 10",
+              "altEn": "Newborn — work 10"
+            }
+          ]
+        },
+        {
+          "title": "Portal",
+          "titleEn": "Portal",
+          "cover": "assets/images/gallery/Portal/portal-01-cover.webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/Portal/portal-01-cover.webp",
+          "images": [
+            {
+              "src": "assets/images/gallery/Portal/portal-02.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-02.webp",
+              "alt": "Portal — rad 02",
+              "altEn": "Portal — work 02"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-03.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-03.webp",
+              "alt": "Portal — rad 03",
+              "altEn": "Portal — work 03"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-04.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-04.webp",
+              "alt": "Portal — rad 04",
+              "altEn": "Portal — work 04"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-05.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-05.webp",
+              "alt": "Portal — rad 05",
+              "altEn": "Portal — work 05"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-06.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-06.webp",
+              "alt": "Portal — rad 06",
+              "altEn": "Portal — work 06"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-07.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-07.webp",
+              "alt": "Portal — rad 07",
+              "altEn": "Portal — work 07"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-08.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-08.webp",
+              "alt": "Portal — rad 08",
+              "altEn": "Portal — work 08"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-09.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-09.webp",
+              "alt": "Portal — rad 09",
+              "altEn": "Portal — work 09"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-10.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-10.webp",
+              "alt": "Portal — rad 10",
+              "altEn": "Portal — work 10"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-11.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-11.webp",
+              "alt": "Portal — rad 11",
+              "altEn": "Portal — work 11"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-12.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-12.webp",
+              "alt": "Portal — rad 12",
+              "altEn": "Portal — work 12"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-13.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-13.webp",
+              "alt": "Portal — rad 13",
+              "altEn": "Portal — work 13"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-14.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-14.webp",
+              "alt": "Portal — rad 14",
+              "altEn": "Portal — work 14"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-15.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-15.webp",
+              "alt": "Portal — rad 15",
+              "altEn": "Portal — work 15"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-16.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-16.webp",
+              "alt": "Portal — rad 16",
+              "altEn": "Portal — work 16"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-17.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-17.webp",
+              "alt": "Portal — rad 17",
+              "altEn": "Portal — work 17"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-18.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-18.webp",
+              "alt": "Portal — rad 18",
+              "altEn": "Portal — work 18"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-19.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-19.webp",
+              "alt": "Portal — rad 19",
+              "altEn": "Portal — work 19"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-21.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-21.webp",
+              "alt": "Portal — rad 21",
+              "altEn": "Portal — work 21"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-22.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-22.webp",
+              "alt": "Portal — rad 22",
+              "altEn": "Portal — work 22"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-23.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-23.webp",
+              "alt": "Portal — rad 23",
+              "altEn": "Portal — work 23"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-24.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-24.webp",
+              "alt": "Portal — rad 24",
+              "altEn": "Portal — work 24"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-25.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-25.webp",
+              "alt": "Portal — rad 25",
+              "altEn": "Portal — work 25"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-26.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-26.webp",
+              "alt": "Portal — rad 26",
+              "altEn": "Portal — work 26"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-27.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-27.webp",
+              "alt": "Portal — rad 27",
+              "altEn": "Portal — work 27"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-28.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-28.webp",
+              "alt": "Portal — rad 28",
+              "altEn": "Portal — work 28"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-29.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-29.webp",
+              "alt": "Portal — rad 29",
+              "altEn": "Portal — work 29"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-30.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-30.webp",
+              "alt": "Portal — rad 30",
+              "altEn": "Portal — work 30"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-31.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-31.webp",
+              "alt": "Portal — rad 31",
+              "altEn": "Portal — work 31"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-32.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-32.webp",
+              "alt": "Portal — rad 32",
+              "altEn": "Portal — work 32"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-33.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-33.webp",
+              "alt": "Portal — rad 33",
+              "altEn": "Portal — work 33"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-34.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-34.webp",
+              "alt": "Portal — rad 34",
+              "altEn": "Portal — work 34"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-35.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-35.webp",
+              "alt": "Portal — rad 35",
+              "altEn": "Portal — work 35"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-36.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-36.webp",
+              "alt": "Portal — rad 36",
+              "altEn": "Portal — work 36"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-37.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-37.webp",
+              "alt": "Portal — rad 37",
+              "altEn": "Portal — work 37"
+            },
+            {
+              "src": "assets/images/gallery/Portal/portal-38.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/Portal/portal-38.webp",
+              "alt": "Portal — rad 38",
+              "altEn": "Portal — work 38"
             }
           ]
         },
         {
           "title": "Portreti",
-          "cover": "assets/images/gallery/optimized/photography/portrait-cover.webp",
+          "titleEn": "Portraits",
+          "cover": "assets/images/gallery/portreti/portreti-01-cover.webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-01-cover.webp",
           "images": [
             {
-              "src": "assets/images/gallery/optimized/photography/portrait-01.webp",
-              "alt": "Portret, rad 1"
+              "src": "assets/images/gallery/portreti/portreti-02.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-02.webp",
+              "alt": "Portreti — rad 02",
+              "altEn": "Portraits — work 02"
             },
             {
-              "src": "assets/images/gallery/optimized/photography/portrait-02.webp",
-              "alt": "Portret, rad 2"
+              "src": "assets/images/gallery/portreti/portreti-03.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-03.webp",
+              "alt": "Portreti — rad 03",
+              "altEn": "Portraits — work 03"
+            },
+            {
+              "src": "assets/images/gallery/portreti/portreti-04.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-04.webp",
+              "alt": "Portreti — rad 04",
+              "altEn": "Portraits — work 04"
+            },
+            {
+              "src": "assets/images/gallery/portreti/portreti-05.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-05.webp",
+              "alt": "Portreti — rad 05",
+              "altEn": "Portraits — work 05"
+            },
+            {
+              "src": "assets/images/gallery/portreti/portreti-06.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-06.webp",
+              "alt": "Portreti — rad 06",
+              "altEn": "Portraits — work 06"
+            },
+            {
+              "src": "assets/images/gallery/portreti/portreti-07.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-07.webp",
+              "alt": "Portreti — rad 07",
+              "altEn": "Portraits — work 07"
+            },
+            {
+              "src": "assets/images/gallery/portreti/portreti-08.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-08.webp",
+              "alt": "Portreti — rad 08",
+              "altEn": "Portraits — work 08"
+            },
+            {
+              "src": "assets/images/gallery/portreti/portreti-09.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-09.webp",
+              "alt": "Portreti — rad 09",
+              "altEn": "Portraits — work 09"
+            },
+            {
+              "src": "assets/images/gallery/portreti/portreti-10.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-10.webp",
+              "alt": "Portreti — rad 10",
+              "altEn": "Portraits — work 10"
+            },
+            {
+              "src": "assets/images/gallery/portreti/portreti-11.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-11.webp",
+              "alt": "Portreti — rad 11",
+              "altEn": "Portraits — work 11"
+            },
+            {
+              "src": "assets/images/gallery/portreti/portreti-12.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/portreti/portreti-12.webp",
+              "alt": "Portreti — rad 12",
+              "altEn": "Portraits — work 12"
             }
           ]
-        }
-      ]
-    },
-    "digital-art": {
-      "cover": "assets/images/gallery/optimized/digital-art/cover.webp",
-      "series": [
+        },
         {
-          "title": "Test radovi",
-          "cover": "assets/images/gallery/optimized/digital-art/cover.webp",
+          "title": "Sól",
+          "titleEn": "Sól",
+          "cover": "assets/images/gallery/SOL AI/sol-ai-01.webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-01.webp",
+          "statement": {
+            "sr": "Rođen sam u prirodi i odrastao okružen njome, mnogo pre nego što sam upoznao bilo šta izvan nje. Detinjstvo sam proveo u kući bez struje. Doslovno. Bez računara, bez telefona, a televiziju sam gledao samo povremeno, poput nekog pozajmljenog sna. Možda je upravo zato nekima teško da poveruju da sam se kasnije vratio da ponovo živim u porodičnoj kući.\n\nPriroda je oduvek bila moje neposredno okruženje. Doživljavam je kao preobilje zelenila, zasićeno živim, neukroćenim bojama. Cveće je svuda — neuređeno, živo, neobuzdano. U njemu se krije čitav sistem oblika, struktura i obrazaca. Ako dovoljno pažljivo posmatraš, počinje da liči na neki drugi jezik. Livada je moj univerzum. Gotovo sve čega se sećam iz detinjstva vezano je za nju: cveće, trava, suncem užarena popodneva... i još cveća.\n\nCveće? Koji đavo? Zašto je onda sve crno-belo? I dalje?\n\nZa ovu seriju koristim prethodno obučen model neuronske mreže za transformaciju slike u sliku (image-to-image), koji se izvršava lokalno putem ONNX Runtime okruženja. Model radi isključivo sa crno-belim slikama, obrađujući informacije o svetlini i strukturi, i transformišući fotografski materijal kroz sopstvenu interpretaciju oblika, teksture i kontrasta. Dobijene slike nisu ni neposredni fotografski zapisi ni potpuno zamišljene konstrukcije. One nastaju negde između izvorne fotografije i unutrašnjih reprezentacija modela.\n\nZanima me upravo taj prostor transformacije, u kojem fotografska slika postaje nešto rekonstruisano, a ne samo zabeleženo — proces u kojem se prepliću percepcija, sećanje i mašinska obrada.\nPovremeno se vraćam u ovo ruralnom okruženje sa ograničenom infrastrukturom, gde se moj telefon i digitalni alati napajaju solarnom energijom. Ovde tehnologija nije apstraktna niti udaljena. Ona predstavlja praktičan i opipljiv sistem, oblikovan sopstvenim ograničenjima i uslovima u kojima funkcioniše. Dok priroda biva moje neposredno okruženje, tehnologija postaje sredstvo pomoću kojeg je posmatram na drugačiji način.\n\nRad sa laganim AI modelima koji se izvršavaju lokalno omogućava mi da proširim sopstvenu fotografsku praksu izvan okvira konvencionalne digitalne obrade slike. Umesto pukog menjanja fotografije, istražujem transformaciju, rekonstrukciju i mogućnosti posmatranja poznatog okruženja kroz specifičan vizuelni jezik.\n\nNa kraju, ovaj rad odražava moj odnos prema dva naizgled udaljena sveta: prirodnom okruženju u kojem sam odrastao i tehnološkim sistemima kroz koje ga danas ponovo interpretiram. Tehnologiju ne posmatram kao zamenu za prirodu ili ljudsku percepciju, već kao još jedno sredstvo za proširivanje granica njihovog doživljaja.",
+            "en": "I was born in nature and grew up surrounded by it, long before I encountered anything beyond it. I spent my childhood in a house without electricity. Literally. No computer, no phone, and I watched television only occasionally, like a borrowed dream. Perhaps that is why some people find it hard to believe that I later returned to live in my family home.\n\nNature has always been my immediate surroundings. I experience it as an abundance of greenery, saturated with vivid, untamed colours. Flowers are everywhere—unarranged, alive, exuberant. Within them lies an entire system of forms, structures, and patterns. If you look closely enough, they begin to resemble another language. The meadow is my universe. Almost everything I remember from childhood is connected to it: flowers, grass, sun-baked afternoons… and more flowers.\n\nFlowers? What the hell? So why is everything in black and white? Still?\n\nFor this series, I use a pre-trained neural network model for image-to-image transformation, running locally with ONNX Runtime. The model works exclusively with black-and-white images, processing information about brightness and structure and transforming the photographic material through its own interpretation of form, texture, and contrast. The resulting images are neither direct photographic records nor entirely imagined constructions. They emerge somewhere between the source photograph and the model’s internal representations.\n\nI am interested precisely in this space of transformation, where a photographic image becomes something reconstructed rather than merely recorded—a process in which perception, memory, and machine processing intertwine.\n\nI occasionally return to this rural environment with limited infrastructure, where my phone and digital tools are powered by solar energy. Here, technology is neither abstract nor distant. It is a practical, tangible system, shaped by its own limitations and by the conditions in which it operates. While nature is my immediate environment, technology becomes a means of observing it differently.\n\nWorking with lightweight AI models that run locally allows me to extend my photographic practice beyond the conventions of digital image processing. Rather than simply altering a photograph, I explore transformation, reconstruction, and the possibility of observing a familiar environment through a distinct visual language.\n\nUltimately, this work reflects my relationship with two seemingly distant worlds: the natural environment in which I grew up and the technological systems through which I now reinterpret it. I do not see technology as a replacement for nature or human perception, but as another means of expanding the boundaries of how they can be experienced."
+          },
           "images": [
             {
-              "src": "assets/images/gallery/optimized/digital-art/work-01.webp",
-              "alt": "Digitalna slika, test rad 1"
+              "src": "assets/images/gallery/SOL AI/sol-ai-01.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-01.webp",
+              "alt": "Sól — rad 01",
+              "altEn": "Sól — work 01"
             },
             {
-              "src": "assets/images/gallery/optimized/digital-art/work-02.webp",
-              "alt": "Digitalna slika, test rad 2"
+              "src": "assets/images/gallery/SOL AI/sol-ai-02.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-02.webp",
+              "alt": "Sól — rad 02",
+              "altEn": "Sól — work 02"
             },
             {
-              "src": "assets/images/gallery/optimized/digital-art/work-03.webp",
-              "alt": "Digitalna slika, test rad 3"
+              "src": "assets/images/gallery/SOL AI/sol-ai-03.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-03.webp",
+              "alt": "Sól — rad 03",
+              "altEn": "Sól — work 03"
             },
             {
-              "src": "assets/images/gallery/optimized/digital-art/work-04.webp",
-              "alt": "Digitalna slika, test rad 4"
+              "src": "assets/images/gallery/SOL AI/sol-ai-04.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-04.webp",
+              "alt": "Sól — rad 04",
+              "altEn": "Sól — work 04"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-05.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-05.webp",
+              "alt": "Sól — rad 05",
+              "altEn": "Sól — work 05"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-06.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-06.webp",
+              "alt": "Sól — rad 06",
+              "altEn": "Sól — work 06"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-07.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-07.webp",
+              "alt": "Sól — rad 07",
+              "altEn": "Sól — work 07"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-08.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-08.webp",
+              "alt": "Sól — rad 08",
+              "altEn": "Sól — work 08"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-09.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-09.webp",
+              "alt": "Sól — rad 09",
+              "altEn": "Sól — work 09"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-10.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-10.webp",
+              "alt": "Sól — rad 10",
+              "altEn": "Sól — work 10"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-11.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-11.webp",
+              "alt": "Sól — rad 11",
+              "altEn": "Sól — work 11"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-12.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-12.webp",
+              "alt": "Sól — rad 12",
+              "altEn": "Sól — work 12"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-13.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-13.webp",
+              "alt": "Sól — rad 13",
+              "altEn": "Sól — work 13"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-14.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-14.webp",
+              "alt": "Sól — rad 14",
+              "altEn": "Sól — work 14"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-15.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-15.webp",
+              "alt": "Sól — rad 15",
+              "altEn": "Sól — work 15"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-16.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-16.webp",
+              "alt": "Sól — rad 16",
+              "altEn": "Sól — work 16"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-17.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-17.webp",
+              "alt": "Sól — rad 17",
+              "altEn": "Sól — work 17"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-18.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-18.webp",
+              "alt": "Sól — rad 18",
+              "altEn": "Sól — work 18"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-19.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-19.webp",
+              "alt": "Sól — rad 19",
+              "altEn": "Sól — work 19"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-20.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-20.webp",
+              "alt": "Sól — rad 20",
+              "altEn": "Sól — work 20"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-21.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-21.webp",
+              "alt": "Sól — rad 21",
+              "altEn": "Sól — work 21"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-22.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-22.webp",
+              "alt": "Sól — rad 22",
+              "altEn": "Sól — work 22"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-23.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-23.webp",
+              "alt": "Sól — rad 23",
+              "altEn": "Sól — work 23"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-24.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-24.webp",
+              "alt": "Sól — rad 24",
+              "altEn": "Sól — work 24"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-25.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-25.webp",
+              "alt": "Sól — rad 25",
+              "altEn": "Sól — work 25"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-26.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-26.webp",
+              "alt": "Sól — rad 26",
+              "altEn": "Sól — work 26"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-27.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-27.webp",
+              "alt": "Sól — rad 27",
+              "altEn": "Sól — work 27"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-28.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-28.webp",
+              "alt": "Sól — rad 28",
+              "altEn": "Sól — work 28"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-29.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-29.webp",
+              "alt": "Sól — rad 29",
+              "altEn": "Sól — work 29"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-30.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-30.webp",
+              "alt": "Sól — rad 30",
+              "altEn": "Sól — work 30"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-31.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-31.webp",
+              "alt": "Sól — rad 31",
+              "altEn": "Sól — work 31"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-32.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-32.webp",
+              "alt": "Sól — rad 32",
+              "altEn": "Sól — work 32"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-33.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-33.webp",
+              "alt": "Sól — rad 33",
+              "altEn": "Sól — work 33"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-34.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-34.webp",
+              "alt": "Sól — rad 34",
+              "altEn": "Sól — work 34"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-35.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-35.webp",
+              "alt": "Sól — rad 35",
+              "altEn": "Sól — work 35"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-36.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-36.webp",
+              "alt": "Sól — rad 36",
+              "altEn": "Sól — work 36"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-37.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-37.webp",
+              "alt": "Sól — rad 37",
+              "altEn": "Sól — work 37"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-38.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-38.webp",
+              "alt": "Sól — rad 38",
+              "altEn": "Sól — work 38"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-39.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-39.webp",
+              "alt": "Sól — rad 39",
+              "altEn": "Sól — work 39"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-40.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-40.webp",
+              "alt": "Sól — rad 40",
+              "altEn": "Sól — work 40"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-41.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-41.webp",
+              "alt": "Sól — rad 41",
+              "altEn": "Sól — work 41"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-42.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-42.webp",
+              "alt": "Sól — rad 42",
+              "altEn": "Sól — work 42"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-43.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-43.webp",
+              "alt": "Sól — rad 43",
+              "altEn": "Sól — work 43"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-44.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-44.webp",
+              "alt": "Sól — rad 44",
+              "altEn": "Sól — work 44"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-45.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-45.webp",
+              "alt": "Sól — rad 45",
+              "altEn": "Sól — work 45"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-46.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-46.webp",
+              "alt": "Sól — rad 46",
+              "altEn": "Sól — work 46"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-47.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-47.webp",
+              "alt": "Sól — rad 47",
+              "altEn": "Sól — work 47"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-48.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-48.webp",
+              "alt": "Sól — rad 48",
+              "altEn": "Sól — work 48"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-49.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-49.webp",
+              "alt": "Sól — rad 49",
+              "altEn": "Sól — work 49"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-50.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-50.webp",
+              "alt": "Sól — rad 50",
+              "altEn": "Sól — work 50"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-51.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-51.webp",
+              "alt": "Sól — rad 51",
+              "altEn": "Sól — work 51"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-52.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-52.webp",
+              "alt": "Sól — rad 52",
+              "altEn": "Sól — work 52"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-53.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-53.webp",
+              "alt": "Sól — rad 53",
+              "altEn": "Sól — work 53"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-54.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-54.webp",
+              "alt": "Sól — rad 54",
+              "altEn": "Sól — work 54"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-55.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-55.webp",
+              "alt": "Sól — rad 55",
+              "altEn": "Sól — work 55"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-56.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-56.webp",
+              "alt": "Sól — rad 56",
+              "altEn": "Sól — work 56"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-57.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-57.webp",
+              "alt": "Sól — rad 57",
+              "altEn": "Sól — work 57"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-58.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-58.webp",
+              "alt": "Sól — rad 58",
+              "altEn": "Sól — work 58"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-59.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-59.webp",
+              "alt": "Sól — rad 59",
+              "altEn": "Sól — work 59"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-60.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-60.webp",
+              "alt": "Sól — rad 60",
+              "altEn": "Sól — work 60"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-61.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-61.webp",
+              "alt": "Sól — rad 61",
+              "altEn": "Sól — work 61"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-62.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-62.webp",
+              "alt": "Sól — rad 62",
+              "altEn": "Sól — work 62"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-63.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-63.webp",
+              "alt": "Sól — rad 63",
+              "altEn": "Sól — work 63"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-64.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-64.webp",
+              "alt": "Sól — rad 64",
+              "altEn": "Sól — work 64"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-65.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-65.webp",
+              "alt": "Sól — rad 65",
+              "altEn": "Sól — work 65"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-66.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-66.webp",
+              "alt": "Sól — rad 66",
+              "altEn": "Sól — work 66"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-67.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-67.webp",
+              "alt": "Sól — rad 67",
+              "altEn": "Sól — work 67"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-68.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-68.webp",
+              "alt": "Sól — rad 68",
+              "altEn": "Sól — work 68"
+            },
+            {
+              "src": "assets/images/gallery/SOL AI/sol-ai-69.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/SOL AI/sol-ai-69.webp",
+              "alt": "Sól — rad 69",
+              "altEn": "Sól — work 69"
+            }
+          ]
+        },
+        {
+          "title": "Rat",
+          "titleEn": "War",
+          "cover": "assets/images/gallery/War/war-01.webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/War/war-01.webp",
+          "statement": {
+            "sr": "U doba brzog širenja moći veštačke inteligencije i njene izuzetne sposobnosti da nam olakša život i ubrza tehnološki napredak u svakoj oblasti (poljoprivredi, medicini, inženjerstvu…), suočavamo se i sa njenom teškom zloupotrebom. Usred sve veće zabrinutosti zbog vojne zloupotrebe naprednih AI modela, postavljamo ozbiljno pitanje sebi i drugima: da li nas AI oslobađa ili nas, zapravo, vodi ka smrti?\n\nI mnogih drugih pitanja ima: da li će nam uskoro biti oduzeta slobodna volja? Mogu li stvari skrivene od javnosti dodatno ugroziti naše živote? Moraju li mladi vojnici i nevini civili da umiru od AI oružja, kada je smrt u ratu — u unakrsnoj vatri među ljudima — već sama po sebi besmislena?\n\nHajde da mislimo — nova pitanja stižu brže nego što uspevamo da ih postavimo.\n\nSavremeno ratovanje više ne oduzima samo život — ono integriše telo u sistem. Vojnik prestaje da bude pojedinac i postaje čvor u mreži: senzor, meta, podatak. Granica između čoveka i oružja se briše, i upravo tu granicu rad vizuelno istražuje. Ali ni mi, gledaoci, nismo izvan te mreže. Dok skrolujemo kroz vesti o dronovima, AI oružju i sankcijama, i sami postajemo deo istog sistema slika — daleki, zaklonjeni ekranom, a ipak saučesnici u posmatranju.¹ Rad govori i o toj distanci: o tome kako smrt nekog drugog, posredovana algoritmom i pikselima, postaje samo još jedan sadržaj pored kojeg skrolujemo.\n\nZa ovaj rad koristio sam necenzurisan AI model za generisanje slika, koji mi je omogućio da napravim portrete mladih muškaraca, vojnika, ranjenih žicama i čipovima, ukazujući na problem na taj način. Zatim sam generisane slike preneo na drugi uređaj putem SSTV (slow-scan television — televizija sa sporim skeniranjem) prenosa slike zvukom, imitirajući i zamišljeni prenos šifrovanih ratnih poruka i zamišljenu digitalnu komunikaciju između AI modela. Dobijene slike sam dodatno obradio ONNX Runtime modelom za povećanje rezolucije koji radi na samom uređaju, uključivši halucinirane podatke tog modela u sam rad. Slike su zatim dodatno obrađene u softveru za obradu slika.\n\n¹ Trevor Paglen — američki konceptualni umetnik čiji rad sistematski istražuje skrivene infrastrukture nadzora, dronove, tajne vojne baze i mašinsku viziju, često spajajući umetničko snimanje sa istraživačkim metodama geografije i astronomije. Relevantni izvori:\n\nMoMA, Trevor Paglen: It Began as a Military Experiment (2017), https://www.moma.org/collection/works/275173 — rad koji pokazuje kako je američko Ministarstvo odbrane koristilo baze ljudskih lica za razvoj tehnologije prepoznavanja lica.\n\nAnthony Downey, „The return of the uncanny: artificial intelligence and estranged futures“, Visual Studies 40, br. 3 (2025): 462–471, https://doi.org/10.1080/1472586X.2024.2406709 — analiza Paglenove serije Adversarially Evolved Hallucinations i halucinantnog prostora AI generisanja slika u kontekstu nadzora i automatizovanog ratovanja.\n\nAndreas Immanuel Graae i Kathrin Maurer (ur.), Drone Imaginaries: The Power of Remote Vision (Manchester University Press, 2026), pogl. 2 — Paglenovo delo u kontekstu dronovske umetnosti i „world-making“ moći dronova.",
+            "en": "In an age of the rapid expansion of artificial intelligence’s power, and its extraordinary capacity to make our lives easier and accelerate our technological progress in every field (agriculture, medicine, engineering…), we are also confronted with its grave misuse. Amid growing concerns about the military misuse of advanced AI models, we pose a serious question to ourselves, and to others: does AI liberate us, or does it, in fact, lead us toward death?\n\nAnd there are many other questions too: Will we soon be stripped of free will? Could things kept hidden from the public endanger our lives even further? Must young soldiers and innocent civilians die at the hands of AI weapons, when death in war — in the crossfire between human beings — is already senseless in itself?\n\nLet us think — new questions arrive faster than we can even ask them.\n\nContemporary warfare no longer takes only life — it integrates the body into a system. The soldier ceases to be an individual and becomes a node in a network: a sensor, a target, a data point. The line between man and weapon dissolves, and it is precisely this line that the work visually investigates. But we, the viewers, are not outside this network either. As we scroll through news of drones, AI weapons, and sanctions, we too become part of the same system of images — distant, shielded by a screen, yet still complicit in watching.¹ The work speaks to that distance as well: to how someone else's death, mediated through algorithm and pixels, turns into just another piece of content we scroll past.\n\nFor this piece, I used an uncensored AI image-generation model, which allowed me to create portraits of young men, soldiers, wounded by wires and chips, suggesting the problem in this way. I then transmitted the generated images to another device via SSTV (slow-scan television) image transmission through sound, imitating both an imagined transmission of encrypted wartime messages and an imagined digital communication between AI models. I further processed the resulting images with an on-device ONNX Runtime upscaling model, incorporating that model's hallucinated data into the work itself. The images were then further edited in image-editing software.\n\n¹ Trevor Paglen is an American conceptual artist whose work systematically investigates hidden infrastructures of surveillance, drones, secret military bases, and machine vision, often combining artistic image-making with research methods from geography and astronomy. Relevant sources:\n\nMoMA, Trevor Paglen: It Began as a Military Experiment (2017), https://www.moma.org/collection/works/275173 — a work showing how the U.S. Department of Defense used databases of human faces to develop facial-recognition technology.\n\nAnthony Downey, “The return of the uncanny: artificial intelligence and estranged futures,” Visual Studies 40, no. 3 (2025): 462–471, https://doi.org/10.1080/1472586X.2024.2406709 — an analysis of Paglen’s Adversarially Evolved Hallucinations series and the hallucinatory space of AI image generation in the context of surveillance and automated warfare.\n\nAndreas Immanuel Graae and Kathrin Maurer (eds.), Drone Imaginaries: The Power of Remote Vision (Manchester University Press, 2026), ch. 2 — Paglen’s work in the context of drone art and the “world-making” power of drones."
+          },
+          "images": [
+            {
+              "src": "assets/images/gallery/War/war-01.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/War/war-01.webp",
+              "alt": "Rat — rad 01",
+              "altEn": "War — work 01"
+            }
+          ]
+        },
+        {
+          "title": "Apstrakcije",
+          "titleEn": "Abstractions",
+          "cover": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-cover.webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-cover.webp",
+          "images": [
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-01.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-01.webp",
+              "alt": "Apstrakcije — rad 01",
+              "altEn": "Abstractions — work 01"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-02.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-02.webp",
+              "alt": "Apstrakcije — rad 02",
+              "altEn": "Abstractions — work 02"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-03.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-03.webp",
+              "alt": "Apstrakcije — rad 03",
+              "altEn": "Abstractions — work 03"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-04.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-04.webp",
+              "alt": "Apstrakcije — rad 04",
+              "altEn": "Abstractions — work 04"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-05.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-05.webp",
+              "alt": "Apstrakcije — rad 05",
+              "altEn": "Abstractions — work 05"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-06.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-06.webp",
+              "alt": "Apstrakcije — rad 06",
+              "altEn": "Abstractions — work 06"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-07.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-07.webp",
+              "alt": "Apstrakcije — rad 07",
+              "altEn": "Abstractions — work 07"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-08.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-08.webp",
+              "alt": "Apstrakcije — rad 08",
+              "altEn": "Abstractions — work 08"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-09.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-09.webp",
+              "alt": "Apstrakcije — rad 09",
+              "altEn": "Abstractions — work 09"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-10.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-10.webp",
+              "alt": "Apstrakcije — rad 10",
+              "altEn": "Abstractions — work 10"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-11.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-11.webp",
+              "alt": "Apstrakcije — rad 11",
+              "altEn": "Abstractions — work 11"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-12.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-12.webp",
+              "alt": "Apstrakcije — rad 12",
+              "altEn": "Abstractions — work 12"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-13.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-13.webp",
+              "alt": "Apstrakcije — rad 13",
+              "altEn": "Abstractions — work 13"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-14.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-14.webp",
+              "alt": "Apstrakcije — rad 14",
+              "altEn": "Abstractions — work 14"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-15.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-15.webp",
+              "alt": "Apstrakcije — rad 15",
+              "altEn": "Abstractions — work 15"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-16.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-16.webp",
+              "alt": "Apstrakcije — rad 16",
+              "altEn": "Abstractions — work 16"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-17.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-17.webp",
+              "alt": "Apstrakcije — rad 17",
+              "altEn": "Abstractions — work 17"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-18.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-18.webp",
+              "alt": "Apstrakcije — rad 18",
+              "altEn": "Abstractions — work 18"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-19.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-19.webp",
+              "alt": "Apstrakcije — rad 19",
+              "altEn": "Abstractions — work 19"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-20.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-20.webp",
+              "alt": "Apstrakcije — rad 20",
+              "altEn": "Abstractions — work 20"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /apstrakcije/apstrakcije-ap-21.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /apstrakcije/apstrakcije-ap-21.webp",
+              "alt": "Apstrakcije — rad 21",
+              "altEn": "Abstractions — work 21"
+            }
+          ]
+        },
+        {
+          "title": "deFoto",
+          "titleEn": "deFoto",
+          "cover": "assets/images/gallery/digitalna poetika /deFoto/defoto-cover.webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /deFoto/defoto-cover.webp",
+          "images": [
+            {
+              "src": "assets/images/gallery/digitalna poetika /deFoto/defoto-df-01.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /deFoto/defoto-df-01.webp",
+              "alt": "deFoto — rad 01",
+              "altEn": "deFoto — work 01"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /deFoto/defoto-df-02.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /deFoto/defoto-df-02.webp",
+              "alt": "deFoto — rad 02",
+              "altEn": "deFoto — work 02"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /deFoto/defoto-df-03.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /deFoto/defoto-df-03.webp",
+              "alt": "deFoto — rad 03",
+              "altEn": "deFoto — work 03"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /deFoto/defoto-df-04.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /deFoto/defoto-df-04.webp",
+              "alt": "deFoto — rad 04",
+              "altEn": "deFoto — work 04"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /deFoto/defoto-df-05.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /deFoto/defoto-df-05.webp",
+              "alt": "deFoto — rad 05",
+              "altEn": "deFoto — work 05"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /deFoto/defoto-df-06.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /deFoto/defoto-df-06.webp",
+              "alt": "deFoto — rad 06",
+              "altEn": "deFoto — work 06"
+            },
+            {
+              "src": "assets/images/gallery/digitalna poetika /deFoto/defoto-df-07.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/digitalna poetika /deFoto/defoto-df-07.webp",
+              "alt": "deFoto — rad 07",
+              "altEn": "deFoto — work 07"
+            }
+          ]
+        },
+        {
+          "title": "IceCre",
+          "titleEn": "IceCre",
+          "cover": "assets/images/gallery/icecre/1..webp",
+          "coverThumbnail": "assets/images/gallery/_thumbnails/icecre/1..webp",
+          "statement": {
+            "sr": "Rad predstavlja osvrt na stvaralaštvo Endija Vorhola kroz savremenu interpretaciju Web3 i NFT kulture.\n\nKreiranjem različitih varijacija, autor na sarkastičan, kritički i pomalo šaljiv način osvetljava savremenu umetnost i društvo.\n\nTehnika: Digitalna slika nastala na osnovu fotografskog predloška.",
+            "en": "This work reflects on Andy Warhol’s artistic practice through a contemporary interpretation of Web3 and NFT culture.\n\nBy creating different variations, the artist sheds light on contemporary art and society in a sarcastic, critical, and somewhat playful way.\n\nMedium: Digital image based on a photographic source."
+          },
+          "images": [
+            {
+              "src": "assets/images/gallery/icecre/1..webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/icecre/1..webp",
+              "alt": "IceCre — rad 01",
+              "altEn": "IceCre — work 01"
+            },
+            {
+              "src": "assets/images/gallery/icecre/2.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/icecre/2.webp",
+              "alt": "IceCre — rad 02",
+              "altEn": "IceCre — work 02"
+            },
+            {
+              "src": "assets/images/gallery/icecre/3.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/icecre/3.webp",
+              "alt": "IceCre — rad 03",
+              "altEn": "IceCre — work 03"
+            },
+            {
+              "src": "assets/images/gallery/icecre/4.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/icecre/4.webp",
+              "alt": "IceCre — rad 04",
+              "altEn": "IceCre — work 04"
+            },
+            {
+              "src": "assets/images/gallery/icecre/5.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/icecre/5.webp",
+              "alt": "IceCre — rad 05",
+              "altEn": "IceCre — work 05"
+            },
+            {
+              "src": "assets/images/gallery/icecre/6.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/icecre/6.webp",
+              "alt": "IceCre — rad 06",
+              "altEn": "IceCre — work 06"
+            },
+            {
+              "src": "assets/images/gallery/icecre/7.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/icecre/7.webp",
+              "alt": "IceCre — rad 07",
+              "altEn": "IceCre — work 07"
+            },
+            {
+              "src": "assets/images/gallery/icecre/8.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/icecre/8.webp",
+              "alt": "IceCre — rad 08",
+              "altEn": "IceCre — work 08"
+            },
+            {
+              "src": "assets/images/gallery/icecre/9.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/icecre/9.webp",
+              "alt": "IceCre — rad 09",
+              "altEn": "IceCre — work 09"
+            },
+            {
+              "src": "assets/images/gallery/icecre/10.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/icecre/10.webp",
+              "alt": "IceCre — rad 10",
+              "altEn": "IceCre — work 10"
+            },
+            {
+              "src": "assets/images/gallery/icecre/11.webp",
+              "thumbnail": "assets/images/gallery/_thumbnails/icecre/11.webp",
+              "alt": "IceCre — rad 11",
+              "altEn": "IceCre — work 11"
             }
           ]
         }
       ]
-    },
-    "paintings": {
-      "cover": null,
-      "series": []
     }
   }
 }

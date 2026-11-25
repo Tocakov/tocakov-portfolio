@@ -4,30 +4,27 @@ const galleryStatus = document.getElementById("gallery-status");
 const seriesIntro = document.getElementById("series-intro");
 const seriesIntroTitle = document.getElementById("series-intro-title");
 const seriesIntroDescription = document.getElementById("series-intro-description");
-const seriesIntroCover = document.getElementById("series-intro-cover");
-const seriesIntroFallback = document.getElementById("series-intro-fallback");
+const seriesImagesGrid = document.getElementById("series-images");
+const galleryManifest = document.getElementById("gallery-manifest");
+const galleryManifestText = document.getElementById("gallery-manifest-text");
 const imageViewer = document.getElementById("image-viewer");
 const viewerImage = document.getElementById("viewer-image");
+const viewerError = document.getElementById("viewer-error");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 const seriesNames = {
-    "Pejzaži": "Landscapes",
+    "Bačija": "Bačija",
+    "Forest": "Forest",
+    "Levitacije": "Levitations",
+    "Nada": "Hope",
+    "Novorođenče": "Newborn",
+    "Portal": "Portal",
     "Portreti": "Portraits",
-    "Test radovi": "Test works"
-};
-const temporaryDescriptions = {
-    "Pejzaži": {
-        sr: "Privremeni opis za pregled galerije. Konačni tekst ove serije biće dodat uz odabrane radove.",
-        en: "Temporary gallery preview text. The final description for this series will be added with the selected works."
-    },
-    "Portreti": {
-        sr: "Privremeni opis za pregled galerije. Konačni tekst ove serije biće dodat uz odabrane radove.",
-        en: "Temporary gallery preview text. The final description for this series will be added with the selected works."
-    },
-    "Test radovi": {
-        sr: "Privremeni opis za pregled galerije. Konačni tekst ove serije biće dodat uz odabrane radove.",
-        en: "Temporary gallery preview text. The final description for this series will be added with the selected works."
-    }
+    "Sól": "Sól",
+    "Rat": "War",
+    "Apstrakcije": "Abstractions",
+    "deFoto": "deFoto",
+    "IceCre": "IceCre"
 };
 const altTranslations = {
     "Fotografija pejzaža, rad 1": "Landscape photograph, work 1",
@@ -48,9 +45,12 @@ let language = (() => {
     }
 })();
 let allSeries = [];
+let manifest = null;
 let currentSeries = null;
 let currentImageIndex = 0;
 let returnFocus = null;
+let returnFocusIndex = 0;
+let selectedSeriesIndex = 0;
 
 function localizedSeriesName(name) {
     return language === "en" ? (seriesNames[name] || name) : name;
@@ -58,6 +58,10 @@ function localizedSeriesName(name) {
 
 function localizedAlt(alt) {
     return language === "en" ? (altTranslations[alt] || alt) : alt;
+}
+
+function localizedText(text) {
+    return text?.[language] || text?.sr || "";
 }
 
 function setLanguage(nextLanguage) {
@@ -87,11 +91,21 @@ function setLanguage(nextLanguage) {
     document.getElementById("viewer-close").setAttribute("aria-label", language === "en" ? "Close viewer" : "Zatvori prikaz");
     document.getElementById("viewer-previous").setAttribute("aria-label", language === "en" ? "Previous photograph" : "Prethodna fotografija");
     document.getElementById("viewer-next").setAttribute("aria-label", language === "en" ? "Next photograph" : "Sledeća fotografija");
-    document.getElementById("open-series").setAttribute("aria-label", language === "en" ? "Open series" : "Otvori seriju");
+    seriesImagesGrid.setAttribute("aria-label", language === "en" ? "Works in the series" : "Radovi iz serije");
 
+    renderManifest();
     if (allSeries.length) renderSeries();
-    if (currentSeries) renderSeriesIntro();
+    if (currentSeries) {
+        renderSeriesIntro();
+        if (!imageViewer.hidden) returnFocus = seriesImagesGrid.children[returnFocusIndex];
+    }
     if (!imageViewer.hidden && currentSeries) updateViewerImage();
+}
+
+function renderManifest() {
+    const text = localizedText(manifest);
+    galleryManifestText.textContent = text;
+    galleryManifest.hidden = !text;
 }
 
 function seriesCover(series) {
@@ -104,6 +118,7 @@ function seriesImages(series) {
     if (cover && images[0]?.src !== cover) {
         images.unshift({
             src: cover,
+            thumbnail: series.coverThumbnail,
             alt: language === "en"
                 ? `${localizedSeriesName(series.title)} — series cover`
                 : `${series.title} — naslovna fotografija serije`
@@ -143,7 +158,7 @@ function renderSeries() {
         image.loading = "lazy";
         image.decoding = "async";
         const cover = seriesCover(series);
-        if (cover) image.src = cover;
+        if (cover) image.src = series.coverThumbnail || cover;
 
         const fallback = document.createElement("span");
         fallback.className = "series-card__fallback";
@@ -160,6 +175,7 @@ function renderSeries() {
 
 function openSeries(series) {
     currentSeries = series;
+    selectedSeriesIndex = allSeries.indexOf(series);
     currentImageIndex = 0;
     seriesSelection.classList.add("is-leaving");
     window.setTimeout(() => {
@@ -177,25 +193,31 @@ function openSeries(series) {
 function renderSeriesIntro() {
     if (!currentSeries) return;
     seriesIntroTitle.textContent = localizedSeriesName(currentSeries.title);
-    seriesIntroDescription.textContent =
-        temporaryDescriptions[currentSeries.title]?.[language] ||
-        (language === "en"
-            ? "Temporary gallery preview text. The final description will be added with the selected works."
-            : "Privremeni opis za pregled galerije. Konačni tekst biće dodat uz odabrane radove.");
-    const cover = seriesCover(currentSeries);
-    seriesIntroCover.hidden = !cover;
-    seriesIntroFallback.hidden = Boolean(cover);
-    seriesIntroFallback.textContent = language === "en" ? "Series cover will be added" : "Naslovna fotografija serije biće dodata";
-    seriesIntroCover.removeAttribute("src");
-    seriesIntroCover.onerror = null;
-    if (cover) {
-        seriesIntroCover.src = cover;
-        seriesIntroCover.alt = `${language === "en" ? "First image in" : "Prvi rad iz serije"} ${localizedSeriesName(currentSeries.title)}`;
-        setImageErrorState(seriesIntroCover, seriesIntroFallback);
-    } else {
-        seriesIntroCover.alt = "";
-    }
-    document.getElementById("open-series").disabled = !(currentSeries.images?.length);
+    const statement = localizedText(currentSeries.statement);
+    seriesIntroDescription.textContent = statement;
+    seriesIntroDescription.hidden = !statement;
+    seriesImagesGrid.replaceChildren();
+    seriesImages(currentSeries).forEach((image, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "series-image";
+        const alt = language === "en" && image.altEn ? image.altEn : localizedAlt(image.alt || `${currentSeries.title} — ${index + 1}`);
+        button.setAttribute("aria-label", `${language === "en" ? "Open image:" : "Otvori sliku:"} ${alt}`);
+
+        const thumbnail = document.createElement("img");
+        thumbnail.alt = alt;
+        thumbnail.loading = "lazy";
+        thumbnail.decoding = "async";
+        thumbnail.src = image.thumbnail || image.src;
+        const fallback = document.createElement("span");
+        fallback.className = "series-image__fallback";
+        fallback.textContent = language === "en" ? "Image unavailable" : "Slika nije dostupna";
+        fallback.hidden = true;
+        button.append(thumbnail, fallback);
+        setImageErrorState(thumbnail, fallback);
+        button.addEventListener("click", () => openViewer(index, button));
+        seriesImagesGrid.append(button);
+    });
 }
 
 function returnToSeries() {
@@ -206,13 +228,14 @@ function returnToSeries() {
     seriesSelection.classList.add("is-entering");
     window.requestAnimationFrame(() => seriesSelection.classList.remove("is-entering"));
     currentSeries = null;
-    document.querySelector(".series-card")?.focus({ preventScroll: true });
+    seriesGrid.children[selectedSeriesIndex]?.focus({ preventScroll: true });
 }
 
-function openViewer() {
+function openViewer(index, trigger) {
     if (!currentSeries || !seriesImages(currentSeries).length) return;
-    returnFocus = document.getElementById("open-series");
-    currentImageIndex = 0;
+    returnFocus = trigger;
+    returnFocusIndex = index;
+    currentImageIndex = index;
     updateViewerImage();
     imageViewer.hidden = false;
     document.body.classList.add("image-viewer-open");
@@ -223,8 +246,15 @@ function openViewer() {
 function updateViewerImage() {
     const image = currentSeries && seriesImages(currentSeries)[currentImageIndex];
     if (!image) return;
+    viewerError.hidden = true;
+    viewerImage.hidden = false;
+    viewerImage.onerror = () => {
+        viewerImage.hidden = true;
+        viewerError.textContent = language === "en" ? "The image could not be loaded." : "Slika nije mogla da se učita.";
+        viewerError.hidden = false;
+    };
     viewerImage.src = image.src;
-    viewerImage.alt = localizedAlt(image.alt || `${currentSeries.title} — ${currentImageIndex + 1}`);
+    viewerImage.alt = language === "en" && image.altEn ? image.altEn : localizedAlt(image.alt || `${currentSeries.title} — ${currentImageIndex + 1}`);
 }
 
 function preloadAdjacentImages() {
@@ -257,8 +287,6 @@ document.querySelectorAll("[data-language]").forEach((button) => {
     });
 });
 document.getElementById("series-back").addEventListener("click", returnToSeries);
-document.getElementById("open-series").addEventListener("click", openViewer);
-seriesIntroCover.addEventListener("click", openViewer);
 document.getElementById("viewer-close").addEventListener("click", closeViewer);
 document.getElementById("viewer-previous").addEventListener("click", () => stepViewer(-1));
 document.getElementById("viewer-next").addEventListener("click", () => stepViewer(1));
@@ -304,6 +332,8 @@ fetch("assets/data/gallery.json")
         return response.json();
     })
     .then((data) => {
+        manifest = data.manifest;
+        renderManifest();
         allSeries = Object.values(data.categories || {}).flatMap((category) =>
             Array.isArray(category.series) ? category.series : []
         );

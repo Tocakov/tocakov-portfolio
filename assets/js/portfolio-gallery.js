@@ -149,9 +149,6 @@ let letterObserver = null;
 const textSources = new WeakMap();
 const attributeSources = new WeakMap();
 
-intro.hidden = false;
-document.body.classList.add("intro-is-active");
-
 function localized(text) {
     return currentLanguage === "en" ? (englishCopy[text] || text) : text;
 }
@@ -350,14 +347,20 @@ window.addEventListener("scroll", () => {
     if (scrollTicking || !introComplete) return;
     scrollTicking = true;
     window.requestAnimationFrame(() => {
-        const vertical = window.scrollY > window.innerHeight * 0.55;
+        const vertical = window.matchMedia("(min-width: 768px)").matches && window.scrollY > window.innerHeight * 0.55;
         document.body.classList.toggle("brand-is-vertical", vertical);
         revealVisibleTargets();
         scrollTicking = false;
     });
 }, { passive: true });
 
-window.addEventListener("resize", revealVisibleTargets, { passive: true });
+window.addEventListener("resize", () => {
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        if (!introComplete) finishIntro();
+        document.body.classList.remove("brand-is-vertical");
+    }
+    revealVisibleTargets();
+}, { passive: true });
 document.addEventListener("visibilitychange", () => {
     if (!document.hidden) revealVisibleTargets();
 });
@@ -480,6 +483,13 @@ function initializeMotion() {
     revealTargets.forEach((element) => revealObserver?.observe(element));
     prepareHeadingLetters();
     revealVisibleTargets();
+}
+
+if (window.matchMedia("(max-width: 767px)").matches) {
+    finishIntro();
+} else {
+    intro.hidden = false;
+    document.body.classList.add("intro-is-active");
 }
 
 applyLanguage(currentLanguage);
