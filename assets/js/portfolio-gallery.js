@@ -13,7 +13,7 @@ const englishCopy = {
     "Angažuj": "Hire me",
     "NOVA": "NEW",
     "ESTETIKA.": "AESTHETICS.",
-    "Miloš Točaković je vizuelni umetnik i fotograf. Bavi se fotografijom, tradicionalnom umetnošću kao i savremenim multimedijalnim praksama.": "Miloš Točaković is a visual artist and photographer. His practice includes photography, traditional art, and contemporary multimedia work.",
+    "Miloš Točaković je vizuelni umetnik i fotograf čija praksa povezuje fotografiju, dizajn, tradicionalne medije i savremenu multimediju.": "Miloš Točaković is a visual artist and photographer whose practice brings together photography, design, traditional media, and contemporary multimedia.",
     "Pogledaj Radove": "View selected works",
     "Pogledaj portfolio": "View portfolio",
     "Status Sistema": "System status",
