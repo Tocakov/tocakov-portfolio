@@ -793,6 +793,25 @@ header a[href="#contact"]:hover {
     color: var(--portfolio-pink) !important;
 }
 
+.artistic-focus__list {
+    display: grid;
+    gap: 8px;
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.artistic-focus__list li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.artistic-focus__list li > span:first-child {
+    color: var(--portfolio-pink);
+    font-weight: 700;
+}
+
 #about h2,
 #about h3,
 #exhibitions h3,
